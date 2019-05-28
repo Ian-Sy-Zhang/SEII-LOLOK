@@ -43,8 +43,8 @@ $(document).ready(function () {
             "<td>"+movieName+"</td>"+
             "<td>"+hallName+"</td>"+
             "<td>"+ticket.rowIndex+"排"+ticket.columnIndex+"座"+"</td>"+
-            "<td>"+startTime.getMonth()+"月"+startTime.getDate()+"日 "+startTime.getHours+":"+startTime.getMinutes()+"</td>"+
-            "<td>"+endTime.getMonth()+"月"+endTime.getDate()+"日 "+endTime.getHours+":"+endTime.getMinutes()+"</td>"+
+            "<td>"+startTime+"</td>>"+//startTime.getMonth()+"月"+startTime.getDate()+"日 "+startTime.getHours+":"+startTime.getMinutes()+"</td>"+
+            "<td>"+endTime+"</td>>"+//endTime.getMonth()+"月"+endTime.getDate()+"日 "+endTime.getHours+":"+endTime.getMinutes()+"</td>"+
             "<td>"+ticket.state+"</td>"+
             "</tr>";
         $("#ticketTable").append(ticketStr)

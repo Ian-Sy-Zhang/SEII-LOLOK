@@ -24,6 +24,8 @@ $(document).ready(function () {
     }
 });
 
+
+
 function renderSchedule(schedule, seats) {
     $('#schedule-hall-name').text(schedule.hallName);
     $('#order-schedule-hall-name').text(schedule.hallName);
@@ -113,7 +115,99 @@ function orderConfirmClick() {
         '/ticket/lockSeat',
         form,
         function (res) {
-            addticketVOList();
+            getRequest(
+                '/ticket/get/'+sessionStorage.getItem('id'),
+                function (res) {
+                    //ticketVOList
+                    var ticketVOList = [];
+                    res.content.forEach(function (ticket) {
+                        if(ticket.state=="未完成"){
+                            var j = {
+                                "id": ticket.id,
+                                "userId": ticket.userId,
+                                "scheduleId":scheduleId,
+                                "columnIndex": ticket.columnIndex,
+                                "rowIndex":ticket.rowIndex,
+                                "state": ticket.state
+                            };
+                            ticketVOList.push(j)
+                        }
+                    });
+                    var couponList = [];
+                    var couponsList = [];
+                    getRequest(
+                        '/coupon/'+sessionStorage.getItem('id')+'/get',
+                        function (res) {
+                            couponsList = res.content
+                            for(var i=0;i<couponsList.length;i++){
+                                var j={
+                                    "id": couponsList[i].id,
+                                    "description": couponsList[i].description,
+                                    "name": couponsList[i].name,
+                                    "targetAmount": couponsList[i].targetAmount,
+                                    "discountAmount": couponsList[i].discountAmount,
+                                    "startTime": couponsList[i].startTime,
+                                    "endTime": couponsList[i].endTime
+                                };
+                                couponList.push(j)
+                            }
+                            getRequest(
+                                '/schedule/'+scheduleId,
+                                function (res) {
+                                    var fare = res.content.fare;
+                                    var number = selectedSeats.length;
+                                    var total = fare * number;
+                                    var activityList = [];
+                                    getRequest(
+                                        '/activity/get',
+                                        function (res) {
+                                            activityList=res.content
+                                            var orderInfo = {
+                                                "ticketVOList": ticketVOList,
+                                                "total": total,
+                                                "coupons": couponList,
+                                                "activities": activityList
+                                            };
+                                            renderOrder(orderInfo);
+
+                                            getRequest(
+                                                '/vip/' + sessionStorage.getItem('id') + '/get',
+                                                function (res) {
+                                                    isVIP = res.success;
+                                                    useVIP = res.success;
+                                                    if (isVIP) {
+                                                        $('#member-balance').html("<div><b>会员卡余额：</b>" + res.content.balance.toFixed(2) + "元</div>");
+                                                    } else {
+                                                        $("#member-pay").css("display", "none");
+                                                        $("#nonmember-pay").addClass("active");
+
+                                                        $("#modal-body-member").css("display", "none");
+                                                        $("#modal-body-nonmember").css("display", "");
+                                                    }
+                                                },
+                                                function (error) {
+                                                    alert(error);
+                                                });
+                                        },
+                                        function (error) {
+                                            alert(error)
+                                        }
+                                    )
+                                },
+                                function (error) {
+                                    alert(error)
+                                }
+                            )
+                        },
+                        function (error) {
+                            alert(error)
+                        }
+                    )
+                },
+                function (error) {
+                    alert(error)
+                }
+            )
         },
         function (error) {
             alert(JSON.stringify(error))
@@ -209,118 +303,6 @@ function orderConfirmClick() {
         */
 }
 
-function addticketVOList() {
-    getRequest(
-        '/ticket/get/'+sessionStorage.getItem('id'),
-        function (res) {
-            //ticketVOList
-            var ticketVOList = [];
-            res.content.forEach(function (ticket) {
-                if(ticket.state=="未完成"){
-                    var j = {
-                        "id": ticket.id,
-                        "userId": ticket.userId,
-                        "scheduleId":scheduleId,
-                        "columnIndex": ticket.columnIndex,
-                        "rowIndex":ticket.rowIndex,
-                        "state": ticket.state
-                    };
-                    ticketVOList.push(j)
-                }
-            });
-            //111
-            addcoupons(ticketVOList);
-        },
-        function (error) {
-            alert(error)
-        }
-    )
-}
-
-function addcoupons(ticketVOList) {
-    var couponList = [];
-    var couponsList = [];
-    getRequest(
-        '/coupon/'+sessionStorage.getItem('id')+'/get',
-        function (res) {
-            couponsList = res.content
-            for(var i=0;i<couponsList.length;i++){
-                var j={
-                    "id": couponsList[i].id,
-                    "description": couponsList[i].description,
-                    "name": couponsList[i].name,
-                    "targetAmount": couponsList[i].targetAmount,
-                    "discountAmount": couponsList[i].discountAmount,
-                    "startTime": couponsList[i].startTime,
-                    "endTime": couponsList[i].endTime
-                };
-                couponList.push(j)
-            }
-            addtotal(ticketVOList,couponList)
-        },
-        function (error) {
-            alert(error)
-        }
-    )
-}
-
-function addtotal(ticketVOList,couponList) {
-    getRequest(
-        '/schedule/'+scheduleId,
-        function (res) {
-            var fare = res.content.fare;
-            var number = selectedSeats.length;
-            var total = fare * number;
-            addActivity(ticketVOList,couponList,total)
-        },
-        function (error) {
-            alert(error)
-        }
-    )
-}
-
-function addActivity(ticketVOList,couponList,total) {
-    var activityList = [];
-    getRequest(
-        '/activity/get',
-        function (res) {
-            activityList=res.content
-            finish(ticketVOList,couponList,total,activityList)
-        },
-        function (error) {
-            alert(error)
-        }
-    )
-}
-
-function finish(ticketVOList,couponList,total,activities) {
-    var orderInfo = {
-        "ticketVOList": ticketVOList,
-        "total": total,
-        "coupons": couponList,
-        "activities": activities
-    };
-    renderOrder(orderInfo);
-
-    getRequest(
-        '/vip/' + sessionStorage.getItem('id') + '/get',
-        function (res) {
-            isVIP = res.success;
-            useVIP = res.success;
-            if (isVIP) {
-                $('#member-balance').html("<div><b>会员卡余额：</b>" + res.content.balance.toFixed(2) + "元</div>");
-            } else {
-                $("#member-pay").css("display", "none");
-                $("#nonmember-pay").addClass("active");
-
-                $("#modal-body-member").css("display", "none");
-                $("#modal-body-nonmember").css("display", "");
-            }
-        },
-        function (error) {
-            alert(error);
-        });
-}
 
 function switchPay(type) {
     useVIP = (type == 0);
@@ -354,18 +336,18 @@ function renderOrder(orderInfo) {
 
 
     var couponTicketStr = "";
-    if (orderInfo.coupons.length == 0) {
+    coupons = orderInfo.coupons;
+    for (let coupon of coupons) {
+        if(parseInt(total)>=coupon.targetAmount) {
+            couponTicketStr += "<option>满" + coupon.targetAmount + "减" + coupon.discountAmount + "</option>"
+        }
+    }
+    $('#order-coupons').html(couponTicketStr);
+    if (couponTicketStr == "") {
         $('#order-discount').text("优惠金额：无");
         $('#order-actual-total').text(" ¥" + total);
         $('#pay-amount').html("<div><b>金额：</b>" + total + "元</div>");
     } else {
-        coupons = orderInfo.coupons;
-        for (let coupon of coupons) {
-            if(parseInt(total)>=coupon.targetAmount) {
-                couponTicketStr += "<option>满" + coupon.targetAmount + "减" + coupon.discountAmount + "</option>"
-            }
-        }
-        $('#order-coupons').html(couponTicketStr);
         changeCoupon(0);
     }
 }
@@ -421,6 +403,7 @@ function postPayRequest() {
         )
     }
 }
+
 
 function validateForm() {
     var isValidate = true;
