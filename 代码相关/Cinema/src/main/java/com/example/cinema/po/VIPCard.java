@@ -33,6 +33,10 @@ public class VIPCard {
      */
     private Timestamp joinDate;
 
+    private int vipCardTypeId;
+    /**
+     * 会员卡种类
+     **/
 
     public VIPCard() {
 

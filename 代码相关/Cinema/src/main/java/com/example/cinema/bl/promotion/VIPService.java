@@ -1,5 +1,6 @@
 package com.example.cinema.bl.promotion;
 
+import com.example.cinema.po.VIPCardType;
 import com.example.cinema.vo.VIPCardForm;
 import com.example.cinema.vo.ResponseVO;
 
@@ -21,5 +22,13 @@ public interface VIPService {
 
     ResponseVO getCardByUserId(int userId);
 
+    ResponseVO addVIPCardType(VIPCardType vipCardType);
 
+    ResponseVO amendVIPCardType(VIPCardType vipCardType);
+
+    ResponseVO getVIPCardTypeById(int id);
+
+    ResponseVO getAllVIPCardType();
+
+    ResponseVO deleteVIPCardType(int id);
 }

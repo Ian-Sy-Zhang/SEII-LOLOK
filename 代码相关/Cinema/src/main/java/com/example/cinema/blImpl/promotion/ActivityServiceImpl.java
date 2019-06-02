@@ -35,7 +35,7 @@ public class ActivityServiceImpl implements ActivityService {
             activity.setEndTime(activityForm.getEndTime());
             activity.setCoupon(coupon);
             activityMapper.insertActivity(activity);
-            if(activityForm.getMovieList()!=null&&activityForm.getMovieList().size()!=0){
+            if (activityForm.getMovieList() != null && activityForm.getMovieList().size() != 0) {
                 activityMapper.insertActivityAndMovie(activity.getId(), activityForm.getMovieList());
             }
             return ResponseVO.buildSuccess(activityMapper.selectById(activity.getId()));
