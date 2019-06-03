@@ -3,6 +3,7 @@ DROP TABLE IF EXISTS `vip_card_type`;
 CREATE TABLE `vip_card_type`
 (
     `id`              int(11)      NOT NULL AUTO_INCREMENT,
+    `price`           double       NOT NULL,
     `description`     varchar(255) NOT NULL,
     `state`           tinyint(4) DEFAULT NULL,
     `discount_rate`   float      DEFAULT NULL,

@@ -10,6 +10,11 @@ public class VIPCardType {
     private String description;
 
     /**
+     * 购卡金额
+     * **/
+    private double price;
+
+    /**
      * 状态：
      * 0：不可购买
      * 1：可购买
@@ -77,6 +82,14 @@ public class VIPCardType {
 
     public void setState(int state) {
         this.state = state;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     @Override

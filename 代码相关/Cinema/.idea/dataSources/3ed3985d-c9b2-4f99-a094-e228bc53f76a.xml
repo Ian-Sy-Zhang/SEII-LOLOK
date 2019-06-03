@@ -1574,33 +1574,39 @@ user_id</ColNames>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="367" parent="289" name="description">
+    <column id="367" parent="289" name="price">
       <Position>2</Position>
+      <DataType>double|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="368" parent="289" name="description">
+      <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="368" parent="289" name="state">
-      <Position>3</Position>
+    <column id="369" parent="289" name="state">
+      <Position>4</Position>
       <DataType>tinyint(4)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="369" parent="289" name="discount_rate">
-      <Position>4</Position>
-      <DataType>float|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="370" parent="289" name="target_amount">
+    <column id="370" parent="289" name="discount_rate">
       <Position>5</Position>
       <DataType>float|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="371" parent="289" name="discount_amount">
+    <column id="371" parent="289" name="target_amount">
       <Position>6</Position>
       <DataType>float|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="372" parent="289" name="PRIMARY">
+    <column id="372" parent="289" name="discount_amount">
+      <Position>7</Position>
+      <DataType>float|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="373" parent="289" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

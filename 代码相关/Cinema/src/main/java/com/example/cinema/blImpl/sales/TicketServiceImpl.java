@@ -5,6 +5,7 @@ import com.example.cinema.blImpl.management.hall.HallServiceForBl;
 import com.example.cinema.blImpl.management.schedule.ScheduleServiceForBl;
 import com.example.cinema.data.promotion.ActivityMapper;
 import com.example.cinema.data.promotion.VIPCardMapper;
+import com.example.cinema.data.promotion.VIPCardTypeMapper;
 import com.example.cinema.data.sales.TicketMapper;
 import com.example.cinema.data.promotion.CouponMapper;
 import com.example.cinema.po.*;
@@ -38,6 +39,8 @@ public class TicketServiceImpl implements TicketService {
     VIPCardMapper vipCardMapper;
     @Autowired
     ActivityMapper activityMapper;
+    @Autowired
+    VIPCardTypeMapper vipCardTypeMapper;
 
     @Override
     @Transactional
@@ -128,12 +131,25 @@ public class TicketServiceImpl implements TicketService {
     }
 
     @Override
+    public ResponseVO getTicketById(int id) {
+        try{
+            TicketVO ticketVO = ticketMapper.selectTicketById(id).getVO();
+            return ResponseVO.buildSuccess(ticketVO);
+        }catch (Exception e) {
+            e.printStackTrace();
+            return ResponseVO.buildFailure(FAILURE);
+        }
+    }
+
+
+    @Override
     @Transactional
     public ResponseVO completeByVIPCard(OrderVO orderVO) {
         try {
             Double totalPrice = calculateTotalPrice(orderVO);
             int userId = ticketMapper.selectTicketById(orderVO.getTicketId().get(0)).getUserId();
             VIPCard vipCard = vipCardMapper.selectCardByUserId(userId);
+
             if (vipCard.getBalance() - totalPrice < 0) {
                 return ResponseVO.buildFailure(BALANCE_INSUFFICIENT);
             }
@@ -155,7 +171,7 @@ public class TicketServiceImpl implements TicketService {
                 if (ticketMapper.selectTicketById(eachId) == null) {
                     return ResponseVO.buildFailure(UNABLE_TO_FIND_TICKET);
                 }
-                ticketMapper.updateTicketState(eachId,2);
+                ticketMapper.updateTicketState(eachId,3);
             }
             return ResponseVO.buildSuccess();
         } catch (Exception e) {

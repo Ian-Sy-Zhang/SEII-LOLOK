@@ -25,9 +25,10 @@ public class VIPServiceImpl implements VIPService {
     VIPCardTypeMapper vipCardTypeMapper;
 
     @Override
-    public ResponseVO addVIPCard(int userId) {
+    public ResponseVO addVIPCard(int userId,int vipTypeId) {
         VIPCard vipCard = new VIPCard();
         vipCard.setUserId(userId);
+        vipCard.setVipCardTypeId(vipTypeId);
         vipCard.setBalance(0);
         try {
             int id = vipCardMapper.insertOneCard(vipCard);
@@ -46,14 +47,6 @@ public class VIPServiceImpl implements VIPService {
             e.printStackTrace();
             return ResponseVO.buildFailure("失败");
         }
-    }
-
-    @Override
-    public ResponseVO getVIPInfo() {
-        VIPInfoVO vipInfoVO = new VIPInfoVO();
-        vipInfoVO.setDescription(VIPCard.description);
-        vipInfoVO.setPrice(VIPCard.price);
-        return ResponseVO.buildSuccess(vipInfoVO);
     }
 
     @Override

@@ -43,12 +43,16 @@ public interface TicketService {
      */
     ResponseVO getTicketByUser(int userId);
 
+
+    ResponseVO getTicketById(int id);
+
     /**
      * TODO:完成购票【使用会员卡】流程包括会员卡扣费、校验优惠券和根据优惠活动赠送优惠券
      *
      * @param orderVO
      * @return
      */
+
     ResponseVO completeByVIPCard(OrderVO orderVO);
 
     /**

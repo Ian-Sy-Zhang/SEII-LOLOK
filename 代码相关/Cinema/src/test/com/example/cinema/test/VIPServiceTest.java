@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.List;
+
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = CinemaApplication.class)
@@ -20,16 +22,23 @@ public class VIPServiceTest {
     @Autowired
     VIPCardTypeMapper vipCardTypeMapper;
 
-    @Test
-    public void testDatabase(){
+    private VIPCardType getVIPCardType(){
         VIPCardType vipCardType = new VIPCardType();
         vipCardType.setDescription("7折会员卡无满减");
+        vipCardType.setPrice(200);
         vipCardType.setDiscountAmount(0);
         vipCardType.setDiscountRate(0.7);
         vipCardType.setTargetAmount(0);
         vipCardType.setState(1);
-        vipCardTypeMapper.insertVIPCardType(vipCardType);
+        return  vipCardType;
+    }
+
+
+    @Test
+    public void testDatabase(){
+        VIPCardType vipCardType = getVIPCardType();
         System.out.println(vipCardType);
+        vipCardTypeMapper.insertVIPCardType(vipCardType);
     }
 
     @Test
@@ -40,22 +49,22 @@ public class VIPServiceTest {
 
     @Test
     public void test2(){
-        vipService.deleteVIPCardType(1);
+        List<VIPCardType> vipCardTypes = (List<VIPCardType>) vipService.getAllVIPCardType().getContent();
+        for (VIPCardType i:vipCardTypes){
+            System.out.println(i);
+        }
     }
 
     @Test
     public void test3(){
-        VIPCardType vipCardType = new VIPCardType();
-        vipCardType.setDescription("7折会员卡无满减");
-        vipCardType.setDiscountAmount(0);
-        vipCardType.setDiscountRate(0.7);
-        vipCardType.setTargetAmount(0);
-        vipCardType.setState(1);
+        VIPCardType vipCardType = getVIPCardType();
         vipCardType = (VIPCardType) vipService.addVIPCardType(vipCardType).getContent();
         vipCardType.setState(0);
         System.out.println(vipCardType);
         vipService.updateVIPCardType(vipCardType);
     }
+
+
 
 
 }
