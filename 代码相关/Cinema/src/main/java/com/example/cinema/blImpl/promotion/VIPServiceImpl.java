@@ -88,29 +88,36 @@ public class VIPServiceImpl implements VIPService {
         }
     }
 
+    /**----------------vipCardType---------------**/
+
     @Override
     public ResponseVO addVIPCardType(VIPCardType vipCardType) {
         try {
-            int id = vipCardTypeMapper.insertVIPCardType(vipCardType);
-            return ResponseVO.buildSuccess(vipCardTypeMapper.selectVIPCardTypeById(id));
+            vipCardTypeMapper.insertVIPCardType(vipCardType);
+            return ResponseVO.buildSuccess(vipCardType);
         } catch (Exception e) {
-            return ResponseVO.buildFailure("失败");
+            return ResponseVO.buildFailure("添加失败");
         }
     }
 
     @Override
-    public ResponseVO amendVIPCardType(VIPCardType vipCardType) {
+    public ResponseVO updateVIPCardType(VIPCardType vipCardType) {
         try {
             vipCardTypeMapper.updateVIPCardType(vipCardType);
             return ResponseVO.buildSuccess(vipCardTypeMapper.selectVIPCardTypeById(vipCardType.getId()));
         } catch (Exception e) {
-            return ResponseVO.buildFailure("失败");
+            return ResponseVO.buildFailure("修改失败");
         }
     }
 
     @Override
     public ResponseVO getVIPCardTypeById(int id) {
-        return null;
+        try{
+            VIPCardType vipCardType = vipCardTypeMapper.selectVIPCardTypeById(id);
+            return ResponseVO.buildSuccess(vipCardType);
+        } catch (Exception e) {
+            return ResponseVO.buildFailure("获取失败");
+        }
     }
 
     @Override
@@ -119,7 +126,7 @@ public class VIPServiceImpl implements VIPService {
             List<VIPCardType> vipCardTypeList = vipCardTypeMapper.getAllVipCardType();
             return ResponseVO.buildSuccess(vipCardTypeList);
         } catch (Exception e) {
-            return ResponseVO.buildFailure("失败");
+            return ResponseVO.buildFailure("获取全部失败");
         }
     }
 
@@ -129,7 +136,7 @@ public class VIPServiceImpl implements VIPService {
             vipCardTypeMapper.deleteVIPCardType(id);
             return ResponseVO.buildSuccess();
         } catch (Exception e) {
-            return ResponseVO.buildFailure("失败");
+            return ResponseVO.buildFailure("删除失败");
         }
     }
 

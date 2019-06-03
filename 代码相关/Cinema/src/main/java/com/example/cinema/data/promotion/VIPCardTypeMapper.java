@@ -7,7 +7,7 @@ import java.util.List;
 
 @Mapper
 public interface VIPCardTypeMapper {
-    int insertVIPCardType(VIPCardType vipCardType);
+    void insertVIPCardType(VIPCardType vipCardType);
 
     VIPCardType selectVIPCardTypeById(int id);
 

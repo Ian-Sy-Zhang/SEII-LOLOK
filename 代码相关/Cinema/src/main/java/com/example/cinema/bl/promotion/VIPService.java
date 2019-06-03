@@ -24,7 +24,7 @@ public interface VIPService {
 
     ResponseVO addVIPCardType(VIPCardType vipCardType);
 
-    ResponseVO amendVIPCardType(VIPCardType vipCardType);
+    ResponseVO updateVIPCardType(VIPCardType vipCardType);
 
     ResponseVO getVIPCardTypeById(int id);
 

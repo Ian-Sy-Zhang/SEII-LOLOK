@@ -10,10 +10,17 @@ public class VIPCardType {
     private String description;
 
     /**
+     * 状态：
+     * 0：不可购买
+     * 1：可购买
+     * **/
+    private int state;
+
+    /**
      *优惠类型：
      * 1：购买影票时的打折优惠:
-     *  a.discountRate为折扣，discount=7时表示7折
-     *  b.无打折优惠时discountRate为10
+     *  a.discountRate为折扣，discount = 0.7时表示7折
+     *  b.无打折优惠时discountRate为1
      * 2：充值时的满减优惠
      *  a.无满减优惠时discountAmount为0
      * **/
@@ -62,5 +69,25 @@ public class VIPCardType {
 
     public void setDiscountAmount(double discountAmount) {
         this.discountAmount = discountAmount;
+    }
+
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+    }
+
+    @Override
+    public String toString() {
+        return "VIPCardType{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                ", state=" + state +
+                ", discountRate=" + discountRate +
+                ", targetAmount=" + targetAmount +
+                ", discountAmount=" + discountAmount +
+                '}';
     }
 }

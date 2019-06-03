@@ -8,32 +8,32 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController()
-@RequestMapping("/vip")
+@RequestMapping("/viptype")
 public class VIPCardTypeController {
     @Autowired
     VIPService vipService;
 
-    @PostMapping("/")
+    @PostMapping("/add")
     public ResponseVO addVIPCardType(@RequestBody VIPCardType vipCardType) {
         return vipService.addVIPCardType(vipCardType);
     }
 
-    @PostMapping("/")
+    @PostMapping("/amend")
     public ResponseVO amendVIPCardType(@RequestBody VIPCardType vipCardType) {
-        return vipService.amendVIPCardType(vipCardType);
+        return vipService.updateVIPCardType(vipCardType);
     }
 
-    @PostMapping("/")
+    @PostMapping("/get")
     public ResponseVO getVIPCardType(@RequestParam int id) {
         return vipService.getVIPCardTypeById(id);
     }
 
-    @PostMapping("/")
+    @PostMapping("/getall")
     public ResponseVO getAllVIPCardType() {
         return vipService.getAllVIPCardType();
     }
 
-    @PostMapping("/")
+    @PostMapping("/delete")
     public ResponseVO deleteVIPCardType(@RequestParam int id){
         return vipService.deleteVIPCardType(id);
     }
