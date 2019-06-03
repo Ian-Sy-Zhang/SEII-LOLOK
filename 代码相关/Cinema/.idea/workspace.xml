@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17a9a1f2-1c02-4129-a66a-ae2e73d15106" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/promotion/VIPServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/promotion/VIPServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCard.java" afterDir="false" />
-    </list>
+    <list default="true" id="17a9a1f2-1c02-4129-a66a-ae2e73d15106" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +222,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="39" />
     <option name="width" value="1440" />
     <option name="height" value="810" />
@@ -467,7 +464,7 @@
       <workItem from="1559554603995" duration="19000" />
       <workItem from="1559554699885" duration="58000" />
       <workItem from="1559554836872" duration="112000" />
-      <workItem from="1559555048047" duration="1140000" />
+      <workItem from="1559555048047" duration="1238000" />
     </task>
     <servers />
   </component>
@@ -504,7 +501,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21974000" />
+    <option name="totallyTimeSpent" value="22072000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,7 +513,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="39" width="1440" height="810" extended-state="1" />
+    <frame x="0" y="39" width="1440" height="810" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28183118" />
@@ -529,7 +526,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38022283" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38022283" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
