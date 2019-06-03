@@ -67,10 +67,6 @@ public class VIPCard {
         this.joinDate = joinDate;
     }
 
-    public double calculate(double amount) {
-        return (int) (amount / 200) * 30 + amount;
-
-    }
 
     public int getVipCardTypeId() {
         return vipCardTypeId;

@@ -56,9 +56,16 @@ public class VIPServiceImpl implements VIPService {
         if (vipCard == null) {
             return ResponseVO.buildFailure("会员卡不存在");
         }
-        double balance = vipCard.calculate(vipCardForm.getAmount());
-        vipCard.setBalance(vipCard.getBalance() + balance);
+        VIPCardType vipCardType = vipCardTypeMapper.selectVIPCardTypeById(vipCard.getVipCardTypeId());
+        double balance =  vipCard.getBalance();
+        if(vipCardType.getDiscountAmount()!=0){
+            balance += (vipCardForm.getAmount()/vipCardType.getTargetAmount())*vipCardType.getDiscountAmount();
+        }
+        else {
+            balance += vipCardForm.getAmount();
+        }
         try {
+            vipCard.setBalance(balance);
             vipCardMapper.updateCardBalance(vipCardForm.getVipId(), vipCard.getBalance());
             return ResponseVO.buildSuccess(vipCard);
         } catch (Exception e) {
