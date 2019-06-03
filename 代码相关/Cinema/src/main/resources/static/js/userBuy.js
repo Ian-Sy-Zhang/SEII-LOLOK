@@ -46,8 +46,19 @@ $(document).ready(function () {
             "<td>"+startTime+"</td>>"+//startTime.getMonth()+"月"+startTime.getDate()+"日 "+startTime.getHours+":"+startTime.getMinutes()+"</td>"+
             "<td>"+endTime+"</td>>"+//endTime.getMonth()+"月"+endTime.getDate()+"日 "+endTime.getHours+":"+endTime.getMinutes()+"</td>"+
             "<td>"+ticket.state+"</td>"+
+            "<td><button onclick='cancelTicket("+ticket.id+")'>退票</button><td>"+
             "</tr>";
         $("#ticketTable").append(ticketStr)
     }
 
 });
+
+function cancelTicket(id) {
+    alert(id)
+
+    if(state=="已完成"){
+
+    }else{
+        alert("这张票"+state)
+    }
+}
