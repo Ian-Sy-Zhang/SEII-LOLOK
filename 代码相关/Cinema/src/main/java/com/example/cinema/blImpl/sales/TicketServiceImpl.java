@@ -149,7 +149,10 @@ public class TicketServiceImpl implements TicketService {
             Double totalPrice = calculateTotalPrice(orderVO);
             int userId = ticketMapper.selectTicketById(orderVO.getTicketId().get(0)).getUserId();
             VIPCard vipCard = vipCardMapper.selectCardByUserId(userId);
-
+            VIPCardType vipCardType = vipCardTypeMapper.selectVIPCardTypeById(vipCard.getVipCardTypeId());
+            if(vipCardType.getDiscountRate() != 1){
+                totalPrice *= vipCardType.getDiscountRate();
+            }
             if (vipCard.getBalance() - totalPrice < 0) {
                 return ResponseVO.buildFailure(BALANCE_INSUFFICIENT);
             }
