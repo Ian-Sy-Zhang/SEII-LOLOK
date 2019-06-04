@@ -24,6 +24,7 @@ public class VIPServiceTest {
 
     private VIPCardType getVIPCardType(){
         VIPCardType vipCardType = new VIPCardType();
+        vipCardType.setName("白金会员卡");
         vipCardType.setDescription("7折会员卡无满减");
         vipCardType.setPrice(200);
         vipCardType.setDiscountAmount(0);

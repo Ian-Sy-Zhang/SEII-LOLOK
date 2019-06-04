@@ -1,11 +1,15 @@
 package com.example.cinema.po;
 
+import com.example.cinema.vo.VIPCardTypeVO;
+
 /**
  *
  * **/
 public class VIPCardType {
 
     private int id;
+
+    private String name;
 
     private String description;
 
@@ -90,6 +94,37 @@ public class VIPCardType {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public VIPCardTypeVO getVO(){
+        VIPCardTypeVO vipCardTypeVO = new VIPCardTypeVO();
+        vipCardTypeVO.setId(id);
+        vipCardTypeVO.setPrice(price);
+        vipCardTypeVO.setDiscountAmount(discountAmount);
+        vipCardTypeVO.setDiscountRate(discountRate);
+        vipCardTypeVO.setTargetAmount(targetAmount);
+        vipCardTypeVO.setState(state);
+        vipCardTypeVO.setDescription(description);
+        if(discountRate == 1){
+            vipCardTypeVO.setHasDiscountRate(false);
+        }
+        else {
+            vipCardTypeVO.setHasDiscountRate(true);
+        }
+        if(discountAmount == 0){
+            vipCardTypeVO.setHasDiscountAomount(false);
+        }else {
+            vipCardTypeVO.setHasDiscountAomount(true);
+        }
+        return vipCardTypeVO;
     }
 
     @Override
