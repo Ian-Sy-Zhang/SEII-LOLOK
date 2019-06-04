@@ -18,9 +18,9 @@ DROP TABLE IF EXISTS `vip_card`;
 CREATE TABLE `vip_card`
 (
     `id`        int(11)   NOT NULL AUTO_INCREMENT,
-    `type_id`   int(11)            DEFAULT NULL,
-    `user_id`   int(11)            DEFAULT NULL,
-    `balance`   float              DEFAULT NULL,
+    `type_id`   int(11)   NOT NULL,
+    `user_id`   int(11)   NOT NULL,
+    `balance`   float     NOT NULL,
     `join_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (`id`),
     UNIQUE KEY `vip_card_user_id_uindex` (`user_id`)

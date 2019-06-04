@@ -62,4 +62,6 @@ public interface TicketService {
      * @return
      */
     ResponseVO cancelTicket(List<Integer> id);
+
+    ResponseVO refund(List<Integer> ticketId);
 }

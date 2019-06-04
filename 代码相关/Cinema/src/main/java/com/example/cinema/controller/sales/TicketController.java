@@ -51,7 +51,10 @@ public class TicketController {
     public ResponseVO cancelTicket(@RequestParam List<Integer> ticketId){
         return ticketService.cancelTicket(ticketId);
     }
-
+    @PostMapping("/refund")
+    public ResponseVO refund(@RequestParam List<Integer> ticketId){
+        return ticketService.refund(ticketId);
+    }
 
 
 

@@ -183,6 +183,11 @@ public class TicketServiceImpl implements TicketService {
         }
     }
 
+    @Override
+    public ResponseVO refund(List<Integer> ticketId) {
+        return ResponseVO.buildSuccess("退款成功");
+    }
+
     private Double calculateTotalPrice(OrderVO orderVO)throws Exception{
         List<Integer> id = orderVO.getTicketId();
         int couponId = orderVO.getCouponId();
