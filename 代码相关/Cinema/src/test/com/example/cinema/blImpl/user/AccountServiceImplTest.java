@@ -20,13 +20,14 @@ import java.util.List;
 @SpringBootTest(classes = CinemaApplication.class)
 public class AccountServiceImplTest {
 
+    @Autowired
     AccountServiceImpl accountService = new AccountServiceImpl();
     @Autowired
     AccountMapper accountMapper;
 
     @Test
     public void manageAccount() {
-
+        accountMapper.manageAccount(15);
     }
 
     @Test
@@ -39,5 +40,32 @@ public class AccountServiceImplTest {
 
     @Test
     public void changeRole() {
+        accountMapper.manageAccountRole(8,"manager");
+    }
+
+
+    @Test
+    public void test111(){
+        accountService.changeRole(9,"manager");
+    }
+
+
+
+    @Test
+    public void addAccountsByBoss(){
+        User user1 = new User();
+        user1.setRole("staff");
+        user1.setUsername("APPTI111");
+        user1.setPassword("987654321");
+        accountService.addAccountsByBoss(user1);
+    }
+
+    @Test
+    public void addAccountsByBoss1(){
+        User user1 = new User();
+        user1.setRole("staff");
+        user1.setUsername("APPTI");
+        user1.setPassword("987654321");
+        accountMapper.addAccountsByBoss(user1);
     }
 }

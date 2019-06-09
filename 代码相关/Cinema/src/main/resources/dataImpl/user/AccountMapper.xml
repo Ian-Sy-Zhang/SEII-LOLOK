@@ -10,16 +10,21 @@
     </select>
 
     <delete id="manageAccount">
-        delete * from user where id=#{userid}
+        delete from user where id=#{userId}
     </delete>
 
     <select id="getAllAccount" resultMap="User">
-        select * from user where role="manager"
+        select * from user where role="manager" or role="staff"
     </select>
 
     <update id="manageAccountRole" >
         update user set role = #{role} where id=#{userId}
     </update>
+
+    <insert id="addAccountsByBoss" useGeneratedKeys="true" keyProperty="id">
+        insert into user(username, password, role)
+        values (#{username},#{password},#{role})
+    </insert>
 
     <resultMap id="User" type="com.example.cinema.po.User">
     </resultMap>

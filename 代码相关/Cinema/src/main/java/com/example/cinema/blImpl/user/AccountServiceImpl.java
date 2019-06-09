@@ -71,4 +71,15 @@ public class AccountServiceImpl implements AccountService {
         return ResponseVO.buildSuccess();
     }
 
+    @Override
+    public ResponseVO addAccountsByBoss(User user){
+        try {
+            accountMapper.addAccountsByBoss(user);
+        }catch (Exception e){
+            System.out.println("增加角色失败");
+        }
+
+        return ResponseVO.buildSuccess();
+    }
+
 }

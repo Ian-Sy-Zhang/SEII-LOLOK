@@ -1,5 +1,8 @@
 package com.example.cinema.po;
 
+import java.sql.Timestamp;
+import java.util.Date;
+
 public class Expenses {
     private int expensesId;
 
@@ -9,8 +12,8 @@ public class Expenses {
 
     private String Description;
 
-    //TODO 增加事件和日期属性
-    //private String Date;
+    private Timestamp Date;
+
 
     public String getDescription() {
         return Description;
@@ -43,4 +46,6 @@ public class Expenses {
     public void setExpensesId(int expensesId) {
         this.expensesId = expensesId;
     }
+
+
 }

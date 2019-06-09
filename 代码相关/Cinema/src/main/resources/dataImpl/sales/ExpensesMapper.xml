@@ -4,8 +4,8 @@
 
     <insert id="insertExpenses" parameterType="com.example.cinema.po.Expenses"
             useGeneratedKeys="true" keyProperty="id">
-        insert into Expenses(expensesId,userId,Amount,Description)
-        values (#{expensesId},#{userId},#{Amount},#{Description})
+        insert into Expenses(userId,Amount,Description)
+        values (#{userId},#{Amount},#{Description})
     </insert>
 
     <select id="showExpensesByUserId" parameterType="java.lang.Integer" resultMap="Expenses">

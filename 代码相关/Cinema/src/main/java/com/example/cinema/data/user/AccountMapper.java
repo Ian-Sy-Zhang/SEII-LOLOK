@@ -43,9 +43,9 @@ public interface AccountMapper {
      * @param userId
      * @param role
      */
-    int manageAccountRole(@Param("userId") int userId, String role);
+    int manageAccountRole(@Param("userId") int userId, @Param("role") String role);
 
 
-
+    int addAccountsByBoss(User user);
 
 }

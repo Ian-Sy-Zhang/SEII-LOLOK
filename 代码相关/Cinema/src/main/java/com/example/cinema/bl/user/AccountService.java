@@ -32,11 +32,17 @@ public interface AccountService {
     /**
      * 返回所有的用户,结果格式为List<User>
      */
-    ResponseVO showAllAccounts();
+    public ResponseVO showAllAccounts();
 
     /**
      * 改变User的role
      */
-    ResponseVO changeRole(int user, String role);
+    public ResponseVO changeRole(int user, String role);
+
+
+    /**
+     * 增加新的员工角色
+     */
+    public ResponseVO addAccountsByBoss(User user);
 
 }
