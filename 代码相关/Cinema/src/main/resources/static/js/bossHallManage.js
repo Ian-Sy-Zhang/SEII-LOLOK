@@ -21,7 +21,6 @@ $(document).ready(function(){
 
     function getHallForm() {
         return {
-            id: $('#hall-id-input').val(),
             name: $('#hall-name-input').val(),
             row: $('#hall-row-input').val(),
             column: $('#hall-column-input').val(),
@@ -58,20 +57,20 @@ $(document).ready(function(){
             hallDomStr +=
                 "<li class='content-card card'>" +
                 "<div>" +
-                "<span>Id:"+hall.id+"</span>"+
+                "<span>I d : "+hall.id+"</span>"+
                 "</div>" +
                 "<div>"+
-                "<span>影厅名称:"+hall.name+"</span>"+
+                "<span>影 厅 名 称 : "+hall.name+"</span>"+
                 "</div>"+
                 "<div>" +
-                "<span>座位总数:  " + hall.column + "行" + "</span>" +
+                "<span>座 位 总 数 : " + hall.column + "行" + "</span>" +
                 "<span>" + hall.row + "列" +"</span>" +
                 "</div>" +
                 "<div>" +
-                "<span>" +"影厅大小:"+ hall.size + "</span>" +
+                "<span>" +"影 厅 大 小 : "+ hall.size + "</span>" +
                 "</div>" +
-                "<div><button onclick='setHall()'>编辑</button>" +"  "+
-                "<button onclick='deleteHall()'>删除</button></div>" +
+                "<div><button class='btn btn-primary' onclick='setHall()'>编辑</button>"+"<span> </span>"+
+                "<button class='btn btn-danger' onclick='deleteHall()'>删除</button></div>" +
                 "</li>";
         });
         $('.hall-on-list').append(hallDomStr);
