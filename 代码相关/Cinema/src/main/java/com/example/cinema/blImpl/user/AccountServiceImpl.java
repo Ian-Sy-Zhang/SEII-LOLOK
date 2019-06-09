@@ -9,10 +9,12 @@ import com.example.cinema.vo.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * @author huwen
- * @date 2019/3/23
- */
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+
 @Service
 public class AccountServiceImpl implements AccountService {
     private final static String ACCOUNT_EXIST = "账号已存在";
@@ -38,5 +40,46 @@ public class AccountServiceImpl implements AccountService {
         return new UserVO(user);
     }
 
+    @Override
+    public ResponseVO manageAccount(int id) {
+        try {
+            accountMapper.manageAccount(id);
+        } catch (Exception e) {
+            return ResponseVO.buildFailure("非法的删除操作");
+        }
+        return ResponseVO.buildSuccess();
+    }
+
+    @Override
+    public ResponseVO showAllAccounts() {
+        try {
+            List<User> UserList = accountMapper.getAllAccount();
+            return ResponseVO.buildSuccess(UserList);
+        } catch (Exception e) {
+            return ResponseVO.buildFailure("操作非法");
+        }
+    }
+
+
+    @Override
+    public ResponseVO changeRole(User user) {
+        try {
+            accountMapper.manageAccountRole(user);
+        } catch (Exception e) {
+            return ResponseVO.buildFailure("改变用户角色失败");
+        }
+        return ResponseVO.buildSuccess();
+    }
+
+    @Override
+    public ResponseVO addAccountsByBoss(User user) {
+        try {
+            accountMapper.addAccountsByBoss(user);
+        } catch (Exception e) {
+            System.out.println("增加角色失败");
+        }
+
+        return ResponseVO.buildSuccess();
+    }
 
 }

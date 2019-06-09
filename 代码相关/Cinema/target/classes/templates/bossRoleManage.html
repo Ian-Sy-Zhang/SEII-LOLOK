@@ -39,9 +39,11 @@
                      <th>身份</th>
                      <th>用户名</th>
                      <th>密码</th>
+                     <th>修改</th>
+                     <th>删除</th>
                  </tr>
                  </thead>
-                 <tbody></tbody>
+                 <tbody id="account-list"></tbody>
              </table>
         </div>
     </div>
@@ -51,33 +53,33 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="movieModalLabel">新增角色</h4>
+                <h4 class="modal-title" id="userModalLabel">新增角色</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
-                        <label class="col-sm-2 control-label" for="movie-name-input"><span class="error-text">*</span>身份</label>
+                        <label class="col-sm-2 control-label" for="user-role-input"><span class="error-text">*</span>身份</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="movie-name-input" placeholder="请输入身份">
+                            <input type="text" class="form-control" id="user-role-input" placeholder="请输入身份">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label" for="movie-date-input"><span class="error-text">*</span>用户名</label>
+                        <label class="col-sm-2 control-label" for="user-name-input"><span class="error-text">*</span>用户名</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="movie-date-input" placeholder="请输入用户名">
+                            <input type="text" class="form-control" id="user-name-input" placeholder="请输入用户名">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label" for="movie-type-input">密码</label>
+                        <label class="col-sm-2 control-label" for="user-password-input">密码</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="movie-type-input" placeholder="请输入密码">
+                            <input type="text" class="form-control" id="user-password-input" placeholder="请输入密码">
                         </div>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary" id="movie-form-btn">确认</button>
+                <button type="button" class="btn btn-primary" id="user-form-btn" onclick="addAccount()">确认</button>
             </div>
         </div>
     </div>
