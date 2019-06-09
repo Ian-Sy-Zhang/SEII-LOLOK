@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController()
-@RequestMapping("/viptype")
+@RequestMapping("/vipType")
 public class VIPCardTypeController {
     @Autowired
     VIPService vipService;
@@ -28,7 +28,7 @@ public class VIPCardTypeController {
         return vipService.getVIPCardTypeById(id);
     }
 
-    @PostMapping("/getall")
+    @PostMapping("/getAll")
     public ResponseVO getAllVIPCardType() {
         return vipService.getAllVIPCardType();
     }

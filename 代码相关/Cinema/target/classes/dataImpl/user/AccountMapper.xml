@@ -9,6 +9,18 @@
         select * from user where username=#{username}
     </select>
 
+    <delete id="manageAccount">
+        delete * from user where id=#{userid}
+    </delete>
+
+    <select id="getAllAccount" resultMap="User">
+        select * from user where role="manager"
+    </select>
+
+    <update id="manageAccountRole" >
+        update user set role = #{role} where id=#{userId}
+    </update>
+
     <resultMap id="User" type="com.example.cinema.po.User">
     </resultMap>
 </mapper>

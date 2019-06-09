@@ -37,6 +37,11 @@ public class TicketController {
         return ticketService.getTicketByUser(userId);
     }
 
+    @PostMapping("/get/ticket")
+    public ResponseVO getTicketById(@RequestParam int id){
+        return ticketService.getTicketById(id);
+    }
+
     @GetMapping("/get/occupiedSeats")
     public ResponseVO getOccupiedSeats(@RequestParam int scheduleId){
         return ticketService.getBySchedule(scheduleId);
@@ -46,7 +51,10 @@ public class TicketController {
     public ResponseVO cancelTicket(@RequestParam List<Integer> ticketId){
         return ticketService.cancelTicket(ticketId);
     }
-
+    @PostMapping("/refund")
+    public ResponseVO refund(@RequestParam List<Integer> ticketId){
+        return ticketService.refund(ticketId);
+    }
 
 
 

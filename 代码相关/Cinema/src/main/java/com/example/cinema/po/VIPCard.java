@@ -1,18 +1,8 @@
 package com.example.cinema.po;
-
-
 import java.sql.Timestamp;
 
-/**
- * Created by liying on 2019/4/14.
- */
 
 public class VIPCard {
-
-    public static final double price = 25;
-
-    public static final String description="满200送30";
-
     /**
      * 用户id
      */
@@ -33,7 +23,9 @@ public class VIPCard {
      */
     private Timestamp joinDate;
 
+
     private int vipCardTypeId;
+
     /**
      * 会员卡种类
      **/
@@ -75,8 +67,12 @@ public class VIPCard {
         this.joinDate = joinDate;
     }
 
-    public double calculate(double amount) {
-        return (int)(amount/200)*30+amount;
 
+    public int getVipCardTypeId() {
+        return vipCardTypeId;
+    }
+
+    public void setVipCardTypeId(int vipCardTypeId) {
+        this.vipCardTypeId = vipCardTypeId;
     }
 }

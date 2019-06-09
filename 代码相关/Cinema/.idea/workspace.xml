@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17a9a1f2-1c02-4129-a66a-ae2e73d15106" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/VIP.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/example/cinema/test/VIPServiceTest.java" afterDir="false" />
+    <list default="true" id="4d8e31f9-a5e2-4191-b2ea-cc54019b5645" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/sales/ExpensesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/Expenses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/example/cinema/blImpl/user/AccountServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/623f625b-3cc4-4b83-836a-1a3c08cda9cf.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/stage3.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/promotion/VIPService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/promotion/VIPService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/promotion/VIPServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/promotion/VIPServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/promotion/VIPCardTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/promotion/VIPCardTypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/promotion/VIPCardTypeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/promotion/VIPCardTypeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCardType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCardType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/user/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/user/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/sales/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/sales/TicketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/user/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/user/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/user/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/user/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/management/ScheduleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/management/ScheduleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/user/AccountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/user/AccountMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dataImpl/promotion/VIPCardTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dataImpl/promotion/VIPCardTypeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dataImpl/sales/TicketMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dataImpl/sales/TicketMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dataImpl/user/AccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dataImpl/user/AccountMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/example/cinema/test/VIPServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/example/cinema/test/VIPServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/bl/sales/TicketService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/bl/sales/TicketService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/blImpl/sales/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/blImpl/sales/TicketServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/controller/sales/TicketController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/controller/sales/TicketController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dataImpl/sales/TicketMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataImpl/sales/TicketMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dataImpl/user/AccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataImpl/user/AccountMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/cinema/test/VIPServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/cinema/test/VIPServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,133 +49,45 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="cinema@localhost [2]" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="cinema@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cinema: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="cinema@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="cinema: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="view: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="cinema@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="cinema: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="vip_card: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cinema: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="vip_card_type: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="hall: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/com/example/cinema/test/VIPServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://3ed3985d-c9b2-4f99-a094-e228bc53f76a/schema/cinema/table/vip_card_type">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="fd0307ae-2993-4751-90dc-27ac238762a0">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://3ed3985d-c9b2-4f99-a094-e228bc53f76a/schema/cinema/table/vip_card">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="fd0307ae-2993-4751-90dc-27ac238762a0">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCardType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="92" column="1" lean-forward="true" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/promotion/VIPCardTypeMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/bl/promotion/VIPService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/promotion/VIPServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/user/AccountServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="106" column="56" lean-forward="true" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
+            <state relative-caret-position="337">
+              <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/bl/sales/TicketService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/bl/user/AccountService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/promotion/VIPCardTypeMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="585">
+              <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,10 +96,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/controller/promotion/VIPCardTypeController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/sales/TicketServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            <state relative-caret-position="161">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/sales/ExpensesMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="59" lean-forward="true" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/user/AccountMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/controller/user/AccountController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,12 +142,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
-        <option value="Tag Library Descriptor" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>selectScheduleByDate</find>
+      <find>selectView</find>
+      <find>vip</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -201,41 +164,54 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/promotion/ActivityServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/po/PreferentialPolicy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCard.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/dataImpl/promotion/VIPCardMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/promotion/VIPCardController.java" />
-        <option value="$PROJECT_DIR$/sql/cinema.sql" />
-        <option value="$PROJECT_DIR$/sql/stage3.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/promotion/VIPCardTypeController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCardType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/data/promotion/VIPCardTypeMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/promotion/VIPService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/promotion/VIPServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/sales/TicketController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/userBuy.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/bossCancelTicket.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/bossCancelTicket.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/index.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/bossCancelTicket.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/data/management/ScheduleMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/data/user/AccountMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/user/AccountService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/data/sales/Expenses.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dataImpl/sales/Expenses.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/sales/TicketServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dataImpl/sales/TicketMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/user/AccountController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/data/sales/ExpensesMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dataImpl/sales/ExpensesMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/user/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/com/example/cinema/test/VIPServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/dataImpl/promotion/VIPCardTypeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/po/Expenses.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/cinema/po/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dataImpl/user/AccountMapper.xml" />
+        <option value="$PROJECT_DIR$/src/test/com/example/cinema/blImpl/user/AccountServiceImplTest.java" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/Java/apache-maven-3.6.0" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="cinema" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="34" />
-    <option name="y" value="29" />
-    <option name="width" value="1440" />
-    <option name="height" value="810" />
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="711" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -243,7 +219,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,11 +230,6 @@
             <path>
               <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -299,7 +270,37 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cinema" type="462c0819:PsiDirectoryNode" />
               <item name="bl" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="bl" type="462c0819:PsiDirectoryNode" />
               <item name="promotion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="bl" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="bl" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
@@ -318,7 +319,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cinema" type="462c0819:PsiDirectoryNode" />
               <item name="blImpl" type="462c0819:PsiDirectoryNode" />
-              <item name="promotion" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="blImpl" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
@@ -337,7 +348,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cinema" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="promotion" type="462c0819:PsiDirectoryNode" />
+              <item name="statistics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
@@ -356,7 +377,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cinema" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="promotion" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
@@ -389,7 +410,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="dataImpl" type="462c0819:PsiDirectoryNode" />
-              <item name="promotion" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="dataImpl" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
@@ -418,49 +448,41 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="sales" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559010881380" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560063709899" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.cinema.blImpl.user" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -474,24 +496,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VIPServiceTest.test3">
-    <configuration name="VIPServiceTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AccountServiceImplTest.showAllAccounts">
+    <configuration name="AccountServiceImplTest.showAllAccounts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cinema" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.cinema.test.*" />
+          <option name="PATTERN" value="com.example.cinema.blImpl.user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.cinema.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.cinema.test.VIPServiceTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="com.example.cinema.blImpl.user" />
+      <option name="MAIN_CLASS_NAME" value="com.example.cinema.blImpl.user.AccountServiceImplTest" />
+      <option name="METHOD_NAME" value="showAllAccounts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VIPServiceTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VIPServiceTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cinema" />
       <extension name="coverage">
         <pattern>
@@ -501,13 +523,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.cinema.test" />
       <option name="MAIN_CLASS_NAME" value="com.example.cinema.test.VIPServiceTest" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VIPServiceTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VIPServiceTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cinema" />
       <extension name="coverage">
         <pattern>
@@ -517,23 +539,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.cinema.test" />
       <option name="MAIN_CLASS_NAME" value="com.example.cinema.test.VIPServiceTest" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VIPServiceTest.testDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cinema" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.cinema.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.cinema.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.cinema.test.VIPServiceTest" />
-      <option name="METHOD_NAME" value="testDatabase" />
+      <option name="METHOD_NAME" value="test6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -548,10 +554,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VIPServiceTest.test3" />
-        <item itemvalue="JUnit.VIPServiceTest.testDatabase" />
-        <item itemvalue="JUnit.VIPServiceTest.test1" />
-        <item itemvalue="JUnit.VIPServiceTest.test2" />
+        <item itemvalue="JUnit.AccountServiceImplTest.showAllAccounts" />
+        <item itemvalue="JUnit.VIPServiceTest.test6" />
+        <item itemvalue="JUnit.VIPServiceTest.test5" />
       </list>
     </recent_temporary>
   </component>
@@ -560,59 +565,71 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="17a9a1f2-1c02-4129-a66a-ae2e73d15106" name="Default Changelist" comment="" />
-      <created>1559010744033</created>
+      <changelist id="4d8e31f9-a5e2-4191-b2ea-cc54019b5645" name="Default Changelist" comment="" />
+      <created>1559555137749</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1559010744033</updated>
-      <workItem from="1559010747460" duration="113000" />
-      <workItem from="1559108857122" duration="39000" />
-      <workItem from="1559109337524" duration="887000" />
-      <workItem from="1559124514729" duration="30000" />
-      <workItem from="1559477778442" duration="13926000" />
+      <updated>1559555137749</updated>
+      <workItem from="1559555139171" duration="1200000" />
+      <workItem from="1559606396091" duration="5610000" />
+      <workItem from="1559635105320" duration="641000" />
+      <workItem from="1559713661600" duration="2428000" />
+      <workItem from="1559786036865" duration="1050000" />
+      <workItem from="1559892199532" duration="1161000" />
+      <workItem from="1559977557285" duration="5144000" />
+      <workItem from="1560063477428" duration="436000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VIPServiceTest_test1 - 2019.06.03 at 15h 13m 45s.xml">
-      <configuration name="VIPServiceTest.test1" configurationId="JUnit" />
+    <history-entry file="VIPServiceTest_test5 - 2019.06.09 at 00h 40m 17s.xml">
+      <configuration name="VIPServiceTest.test5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VIPServiceTest_test1 - 2019.06.03 at 15h 15m 31s.xml">
-      <configuration name="VIPServiceTest.test1" configurationId="JUnit" />
+    <history-entry file="VIPServiceTest_test5 - 2019.06.09 at 00h 49m 50s.xml">
+      <configuration name="VIPServiceTest.test5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VIPServiceTest_test3 - 2019.06.03 at 15h 16m 08s.xml">
-      <configuration name="VIPServiceTest.test3" configurationId="JUnit" />
+    <history-entry file="VIPServiceTest_test6 - 2019.06.09 at 00h 51m 45s.xml">
+      <configuration name="VIPServiceTest.test6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VIPServiceTest_testDatabase - 2019.06.03 at 15h 20m 24s.xml">
-      <configuration name="VIPServiceTest.testDatabase" configurationId="JUnit" />
+    <history-entry file="VIPServiceTest_test6 - 2019.06.09 at 00h 53m 28s.xml">
+      <configuration name="VIPServiceTest.test6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VIPServiceTest_testDatabase - 2019.06.03 at 15h 25m 17s.xml">
-      <configuration name="VIPServiceTest.testDatabase" configurationId="JUnit" />
+    <history-entry file="VIPServiceTest_test6 - 2019.06.09 at 00h 53m 36s.xml">
+      <configuration name="VIPServiceTest.test6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VIPServiceTest_testDatabase - 2019.06.03 at 15h 27m 36s.xml">
-      <configuration name="VIPServiceTest.testDatabase" configurationId="JUnit" />
+    <history-entry file="VIPServiceTest_test5 - 2019.06.09 at 00h 54m 38s.xml">
+      <configuration name="VIPServiceTest.test5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VIPServiceTest_test3 - 2019.06.03 at 15h 30m 00s.xml">
-      <configuration name="VIPServiceTest.test3" configurationId="JUnit" />
+    <history-entry file="VIPServiceTest_test6 - 2019.06.09 at 00h 54m 53s.xml">
+      <configuration name="VIPServiceTest.test6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VIPServiceTest_test3 - 2019.06.03 at 15h 34m 12s.xml">
-      <configuration name="VIPServiceTest.test3" configurationId="JUnit" />
+    <history-entry file="AccountServiceImplTest_showAllAccounts - 2019.06.09 at 01h 13m 23s.xml">
+      <configuration name="AccountServiceImplTest.showAllAccounts" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VIPServiceTest_test3 - 2019.06.03 at 15h 34m 52s.xml">
-      <configuration name="VIPServiceTest.test3" configurationId="JUnit" />
+    <history-entry file="AccountServiceImplTest_showAllAccounts - 2019.06.09 at 01h 15m 39s.xml">
+      <configuration name="AccountServiceImplTest.showAllAccounts" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VIPServiceTest_test3 - 2019.06.03 at 15h 37m 43s.xml">
-      <configuration name="VIPServiceTest.test3" configurationId="JUnit" />
+    <history-entry file="AccountServiceImplTest_showAllAccounts - 2019.06.09 at 01h 16m 20s.xml">
+      <configuration name="AccountServiceImplTest.showAllAccounts" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14995000" />
+    <option name="totallyTimeSpent" value="26776000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -620,29 +637,29 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32771084" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2850062" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32961586" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32961586" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32961586" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32961586" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32961586" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32961586" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.3283767" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297568" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.22889842" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297568" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -651,48 +668,46 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/vo/ActivityVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/vo/AudiencePriceVO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/vo/MovieVO.java">
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1579">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
+        <state relative-caret-position="-1178" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/vo/ScheduleBatchDeleteForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/vo/ScheduleForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-169">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.idea/dataSources.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/vo/TicketWithScheduleVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/sqldialects.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/312046dd-7c9b-4315-bb2d-f0f6767fdd51/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/vo/UserForm.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -701,371 +716,302 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/vo/VIPCardForm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/vo/UserVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/vo/VIPInfoVO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/bl/statistics/StatisticsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="675">
+          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/vo/ResponseVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/statistics/MovieLikeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/statistics/StatisticsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/statistics/StatisticsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="180" column="69" selection-start-line="180" selection-start-column="69" selection-end-line="180" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/management/ScheduleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/userBuy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="66" lean-forward="true" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/sales/Expenses.Interface" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/management/ScheduleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="49" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/Hall.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/ScheduleItem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userBuy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="497">
+          <caret line="59" column="38" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/PreferentialPolicy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/sales/Expenses.xml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurationSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="442">
+          <caret line="273" column="40" selection-start-line="273" selection-start-column="40" selection-end-line="273" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/Ticket.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/sales/TicketMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/MovieScheduleTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/promotion/VIPCardTypeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/promotion/VIPCardTypeMapper.tld">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/promotion/CouponMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/promotion/ActivityMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/AudiencePrice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/promotion/CouponServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/promotion/ActivityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/controller/promotion/VIPCardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="32">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3ed3985d-c9b2-4f99-a094-e228bc53f76a/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/cinema.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="245" column="22" lean-forward="true" selection-start-line="245" selection-start-column="22" selection-end-line="245" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3ed3985d-c9b2-4f99-a094-e228bc53f76a/schema/cinema/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="fd0307ae-2993-4751-90dc-27ac238762a0">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/VIP.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/bl/promotion/CouponService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3ed3985d-c9b2-4f99-a094-e228bc53f76a/schema/cinema/table/vip_card/index/vip_card_user_id_uindex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/CinemaApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#403#404#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/example/cinema/blImpl/sales/TicketServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="-45">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/promotion/VIPCardMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/controller/sales/TicketController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-28">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/promotion/CouponMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/controller/statistics/StatisticsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/promotion/ActivityMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/example/cinema/test/StatisticsServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
-          <folding>
-            <element signature="e#6052#6053#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/binding/MapperProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/promotion/VIPCardMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3ed3985d-c9b2-4f99-a094-e228bc53f76a/schema/cinema/table/vip_card">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="fd0307ae-2993-4751-90dc-27ac238762a0">
-          <filtering>
-            <filter text="" />
-          </filtering>
+        <state relative-caret-position="83">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/bl/sales/TicketService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        <state relative-caret-position="197">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCardType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/DateLike.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="92" column="1" lean-forward="true" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+        <state relative-caret-position="45">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/bl/promotion/VIPService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/Coupon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/promotion/VIPCardTypeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/AudiencePrice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="das://3ed3985d-c9b2-4f99-a094-e228bc53f76a/schema/cinema/table/vip_card_type">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/sales/TicketMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://312046dd-7c9b-4315-bb2d-f0f6767fdd51/schema/cinema/table/Expenses">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="fd0307ae-2993-4751-90dc-27ac238762a0">
-          <filtering>
-            <filter text="" />
-          </filtering>
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/example/cinema/test/VIPServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+        <state relative-caret-position="115">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="16" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/controller/promotion/VIPCardTypeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/promotion/VIPCardTypeMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/bl/management/HallService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="26" />
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/Expenses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/po/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="18" column="81" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
+          <folding>
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/user/AccountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/example/cinema/blImpl/user/AccountServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://312046dd-7c9b-4315-bb2d-f0f6767fdd51/schema/cinema/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/example/cinema/test/StatisticsServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/sales/ExpensesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/sales/TicketServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/sales/ExpensesMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="59" lean-forward="true" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/promotion/VIPServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/controller/user/AccountController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="106" column="56" lean-forward="true" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
+        <state relative-caret-position="328">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/user/AccountMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/bl/user/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/user/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
+          <last-edited>9.0.4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

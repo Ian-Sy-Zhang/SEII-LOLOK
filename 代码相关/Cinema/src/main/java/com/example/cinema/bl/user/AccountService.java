@@ -1,5 +1,6 @@
 package com.example.cinema.bl.user;
 
+import com.example.cinema.po.User;
 import com.example.cinema.vo.UserForm;
 import com.example.cinema.vo.ResponseVO;
 import com.example.cinema.vo.UserVO;
@@ -21,5 +22,21 @@ public interface AccountService {
      * @return
      */
     public UserVO login(UserForm userForm);
+
+    /**
+     * 根据前端传来的用户ID信息删除用户
+     */
+    public ResponseVO manageAccount(UserVO userVO);
+
+
+    /**
+     * 返回所有的用户,结果格式为List<User>
+     */
+    ResponseVO showAllAccounts();
+
+    /**
+     * 改变User的role
+     */
+    ResponseVO changeRole(int user, String role);
 
 }

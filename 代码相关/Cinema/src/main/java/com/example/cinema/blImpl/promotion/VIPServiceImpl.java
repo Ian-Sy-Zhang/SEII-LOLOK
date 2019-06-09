@@ -4,10 +4,10 @@ import com.example.cinema.bl.promotion.VIPService;
 import com.example.cinema.data.promotion.VIPCardMapper;
 import com.example.cinema.data.promotion.VIPCardTypeMapper;
 import com.example.cinema.po.VIPCardType;
-import com.example.cinema.vo.VIPCardForm;
+import com.example.cinema.vo.VIPCardChargeForm;
 import com.example.cinema.po.VIPCard;
 import com.example.cinema.vo.ResponseVO;
-import com.example.cinema.vo.VIPInfoVO;
+import com.example.cinema.vo.VIPCardForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,9 +25,12 @@ public class VIPServiceImpl implements VIPService {
     VIPCardTypeMapper vipCardTypeMapper;
 
     @Override
-    public ResponseVO addVIPCard(int userId) {
+    public ResponseVO addVIPCard(VIPCardForm vipCardForm) {
+        int userId = vipCardForm.getUserId();
+        int vipTypeId = vipCardForm.getVipCardTypeId();
         VIPCard vipCard = new VIPCard();
         vipCard.setUserId(userId);
+        vipCard.setVipCardTypeId(vipTypeId);
         vipCard.setBalance(0);
         try {
             int id = vipCardMapper.insertOneCard(vipCard);
@@ -49,24 +52,23 @@ public class VIPServiceImpl implements VIPService {
     }
 
     @Override
-    public ResponseVO getVIPInfo() {
-        VIPInfoVO vipInfoVO = new VIPInfoVO();
-        vipInfoVO.setDescription(VIPCard.description);
-        vipInfoVO.setPrice(VIPCard.price);
-        return ResponseVO.buildSuccess(vipInfoVO);
-    }
+    public ResponseVO charge(VIPCardChargeForm vipCardChargeForm) {
 
-    @Override
-    public ResponseVO charge(VIPCardForm vipCardForm) {
-
-        VIPCard vipCard = vipCardMapper.selectCardById(vipCardForm.getVipId());
+        VIPCard vipCard = vipCardMapper.selectCardById(vipCardChargeForm.getVipId());
         if (vipCard == null) {
             return ResponseVO.buildFailure("会员卡不存在");
         }
-        double balance = vipCard.calculate(vipCardForm.getAmount());
-        vipCard.setBalance(vipCard.getBalance() + balance);
+        VIPCardType vipCardType = vipCardTypeMapper.selectVIPCardTypeById(vipCard.getVipCardTypeId());
+        double balance =  vipCard.getBalance();
+        if(vipCardType.getDiscountAmount()!=0){
+            balance += (vipCardChargeForm.getAmount()/vipCardType.getTargetAmount())*vipCardType.getDiscountAmount();
+        }
+        else {
+            balance += vipCardChargeForm.getAmount();
+        }
         try {
-            vipCardMapper.updateCardBalance(vipCardForm.getVipId(), vipCard.getBalance());
+            vipCard.setBalance(balance);
+            vipCardMapper.updateCardBalance(vipCardChargeForm.getVipId(), vipCard.getBalance());
             return ResponseVO.buildSuccess(vipCard);
         } catch (Exception e) {
             e.printStackTrace();
