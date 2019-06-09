@@ -1,36 +1,22 @@
 package com.example.cinema.vo;
 
-/**
- * Created by liying on 2019/4/14.
- */
 public class VIPCardForm {
+    private int userId;
+    private int vipCardTypeId;
 
-    /**
-     * vip卡id
-     */
-    private int vipId;
-
-    /**
-     * 付款金额
-     */
-    private int amount;
-
-
-    public int getVipId() {
-        return vipId;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setVipId(int vipId) {
-        this.vipId = vipId;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public int getAmount() {
-        return amount;
+    public int getVipCardTypeId() {
+        return vipCardTypeId;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void setVipCardTypeId(int vipCardTypeId) {
+        this.vipCardTypeId = vipCardTypeId;
     }
-
-
 }

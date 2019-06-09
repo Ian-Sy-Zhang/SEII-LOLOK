@@ -5,9 +5,6 @@ import com.example.cinema.vo.TicketWithScheduleVO;
 
 import java.sql.Timestamp;
 
-/**
- * Created by liying on 2019/4/16.
- */
 public class Ticket {
 
     /**
@@ -33,7 +30,7 @@ public class Ticket {
 
     /**
      * 订单状态：
-     * 0：未完成 1：已完成 2:已失效
+     * 0：未完成 1：已完成 2:已失效 3:已退票
      */
     private int state;
 
@@ -58,6 +55,14 @@ public class Ticket {
         vo.setScheduleId(this.getScheduleId());
         vo.setId(this.getId());
         vo.setUserId(this.getUserId());
+        String stateString = translateState(state);
+        vo.setState(stateString);
+        vo.setTime(time);
+        return vo;
+
+    }
+
+    private String translateState(int state){
         String stateString;
         switch (state) {
             case 0:
@@ -69,34 +74,22 @@ public class Ticket {
             case 2:
                 stateString = "已失效";
                 break;
+            case  3:
+                stateString = "已退票";
+                break;
             default:
-                stateString = "未完成";
+                stateString = "unknown";
         }
-        vo.setState(stateString);
-        vo.setTime(time);
-        return vo;
-
+        return stateString;
     }
+
     public TicketWithScheduleVO getWithScheduleVO() {
         TicketWithScheduleVO vo = new TicketWithScheduleVO();
         vo.setRowIndex(this.getRowIndex());
         vo.setColumnIndex(this.getColumnIndex());
         vo.setId(this.getId());
         vo.setUserId(this.getUserId());
-        String stateString;
-        switch (state) {
-            case 0:
-                stateString = "未完成";
-                break;
-            case 1:
-                stateString = "已完成";
-                break;
-            case 2:
-                stateString = "已失效";
-                break;
-            default:
-                stateString = "未完成";
-        }
+        String stateString = translateState(state);
         vo.setState(stateString);
         return vo;
 
