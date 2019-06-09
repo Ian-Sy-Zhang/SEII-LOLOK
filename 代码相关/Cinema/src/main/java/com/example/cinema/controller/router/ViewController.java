@@ -89,6 +89,11 @@ public class ViewController {
         return "bossRoleManage";
     }
 
+    @RequestMapping(value = "/boss/hall/manage")
+    public String getBossHallManage() {
+        return "bossHallManage";
+    }
+
     @RequestMapping(value = "/user/record")
     public String getUserRecord(){ return "userRecord";}
 }
