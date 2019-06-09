@@ -23,4 +23,12 @@ public interface HallMapper {
      * @return
      */
     Hall selectHallById(@Param("hallId") int hallId);
+
+
+    int addHall(Hall hall);
+
+    int updateHall(Hall hall);
+
+
+
 }

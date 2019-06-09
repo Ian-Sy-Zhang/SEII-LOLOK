@@ -9,6 +9,7 @@ public class Hall {
     private String name;
     private Integer row;
     private Integer column;
+    private String size;
 
     public Integer getId() {
         return id;
@@ -40,5 +41,13 @@ public class Hall {
 
     public void setColumn(Integer column) {
         this.column = column;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
     }
 }

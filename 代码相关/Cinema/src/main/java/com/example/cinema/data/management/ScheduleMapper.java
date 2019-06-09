@@ -113,7 +113,7 @@ public interface ScheduleMapper {
 
 
     /**
-     * 新增功能：根据movieid和date查询放映信息
+     * 新增功能：根据movieId和date查询放映信息
      */
     List<ScheduleItem> selectScheduleByIdAndDate(@Param("id") int id,@Param("startDate") Date startDate, @Param("endDate") Date endDate);
 

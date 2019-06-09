@@ -3,12 +3,14 @@ package com.example.cinema.test;
 import com.example.cinema.CinemaApplication;
 import com.example.cinema.bl.promotion.VIPService;
 import com.example.cinema.data.promotion.VIPCardTypeMapper;
+import com.example.cinema.data.sales.ExpensesMapper;
 import com.example.cinema.po.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import java.util.List;
 
 import java.util.List;
 
@@ -21,6 +23,8 @@ public class VIPServiceTest {
     VIPService vipService;
     @Autowired
     VIPCardTypeMapper vipCardTypeMapper;
+    @Autowired
+    ExpensesMapper expensesMapper;
 
     private VIPCardType getVIPCardType(){
         VIPCardType vipCardType = new VIPCardType();
@@ -32,6 +36,24 @@ public class VIPServiceTest {
         vipCardType.setTargetAmount(0);
         vipCardType.setState(1);
         return  vipCardType;
+    }
+
+
+    @Test
+    public void test5(){
+        Expenses expenses = new Expenses();
+        expenses.setUserId(2);
+        expenses.setAmount(4);
+        expenses.setDescription("44444444444");
+        expensesMapper.insertExpenses(expenses);
+    }
+
+    @Test
+    public void test6(){
+        List<Expenses> list1 = expensesMapper.showExpensesByUserId(2);
+        for (Expenses expenses:list1){
+            System.out.println(expenses.getExpensesId()+" "+expenses.getUserId()+" "+expenses.getAmount()+" "+expenses.getDescription());
+        }
     }
 
 
