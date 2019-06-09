@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d8e31f9-a5e2-4191-b2ea-cc54019b5645" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/hyzStage3.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/RefundPolicy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/vo/RefundPolicyVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/vo/VIPCardChargeForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/vo/VIPCardTypeVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/cinema.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/po/RefundPolicy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/vo/VIPCardChargeForm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/vo/VIPCardTypeVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/623f625b-3cc4-4b83-836a-1a3c08cda9cf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/623f625b-3cc4-4b83-836a-1a3c08cda9cf.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/VIP.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/promotion/VIPService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/promotion/VIPService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/sales/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/sales/TicketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/promotion/VIPServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/promotion/VIPServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/sales/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/sales/TicketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/promotion/VIPCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/promotion/VIPCardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/promotion/VIPCardTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/promotion/VIPCardTypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/sales/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/sales/TicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCardType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/VIPCardType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/vo/VIPCardForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/vo/VIPCardForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dataImpl/promotion/VIPCardTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dataImpl/promotion/VIPCardTypeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/example/cinema/test/VIPServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/example/cinema/test/VIPServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/bl/promotion/VIPService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/bl/promotion/VIPService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/bl/sales/TicketService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/bl/sales/TicketService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/blImpl/promotion/VIPServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/blImpl/promotion/VIPServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/blImpl/sales/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/blImpl/sales/TicketServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/controller/promotion/VIPCardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/controller/promotion/VIPCardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/controller/promotion/VIPCardTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/controller/promotion/VIPCardTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/controller/sales/TicketController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/controller/sales/TicketController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/po/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/po/Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/po/VIPCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/po/VIPCard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/po/VIPCardType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/po/VIPCardType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/vo/VIPCardForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/vo/VIPCardForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataImpl/promotion/VIPCardTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataImpl/promotion/VIPCardTypeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/cinema/test/VIPServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/cinema/test/VIPServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,6 +48,11 @@
     </expand>
     <select />
   </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="623f625b-3cc4-4b83-836a-1a3c08cda9cf" />
+    </checked>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -101,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sql/hyzStage3.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="23" lean-forward="true" selection-end-line="37" selection-end-column="2" />
+            <state relative-caret-position="315">
+              <caret line="21" column="35" selection-end-line="37" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -248,7 +214,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560082849568" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560084347021" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -393,7 +359,7 @@
       <workItem from="1559786036865" duration="1050000" />
       <workItem from="1559892199532" duration="1161000" />
       <workItem from="1559977557285" duration="5144000" />
-      <workItem from="1560063477428" duration="9213000" />
+      <workItem from="1560063477428" duration="9325000" />
     </task>
     <servers />
   </component>
@@ -430,7 +396,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35553000" />
+    <option name="totallyTimeSpent" value="35665000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,8 +409,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -454,13 +421,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2850062" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2850062" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32961586" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32961586" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32961586" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -906,8 +873,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sql/hyzStage3.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="23" lean-forward="true" selection-end-line="37" selection-end-column="2" />
+        <state relative-caret-position="315">
+          <caret line="21" column="35" selection-end-line="37" selection-end-column="2" />
         </state>
       </provider>
     </entry>

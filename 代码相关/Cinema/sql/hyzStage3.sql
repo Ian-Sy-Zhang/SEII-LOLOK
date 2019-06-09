@@ -23,7 +23,7 @@ CREATE TABLE `vip_card`
     `balance`   float     NOT NULL,
     `join_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (`id`),
-    UNIQUE KEY `vip_card_user_id_uindex` (`user_id`)
+    UNIQUE KEY `vip_card_user_id_uigitndex` (`user_id`)
 );
 
 Drop table if exists `refund_policy`;
