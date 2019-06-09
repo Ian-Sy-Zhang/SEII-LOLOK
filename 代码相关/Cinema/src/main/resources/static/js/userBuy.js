@@ -15,9 +15,9 @@ $(document).ready(function () {
     // TODO:填空
     function renderTicketList(list) {
         $("#ticketTable").empty()
-        list.forEach(function (ticket) {
-          addInfo(ticket)
-        })
+        for(var i=0;i<list.length;i++){
+            addInfo(list[i])
+        }
     }
 
     function addInfo(ticket) {
@@ -54,11 +54,33 @@ $(document).ready(function () {
 });
 
 function cancelTicket(id) {
-    alert(id)
-
-    if(state=="已完成"){
-
-    }else{
-        alert("这张票"+state)
-    }
+    getRequest(
+        '/ticket/get/ticket?id='+id,
+        function (res) {
+            var ticket=res.content;
+            if(ticket.state=="未完成"){
+                alert("这张票未完成")
+            }else if(ticket.state=="已失效"){
+                alert("这张票已失效")
+            }else if(ticket.state=="已退票"){
+                alert("这张票已退票")
+            }else{
+                var ticketList = new Array();
+                ticketList[0]=id;
+                postRequest(
+                    '/ticket/cancel?ticketId='+ticketList,
+                    null,
+                    function (res) {
+                        alert("退票成功")
+                    },
+                    function (error) {
+                        alert(error)
+                    }
+                )
+            }
+        },
+        function (error) {
+            alert(error)
+        }
+    )
 }

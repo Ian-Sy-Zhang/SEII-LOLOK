@@ -16,7 +16,10 @@ $(document).ready(function () {
                     if (formData.username == "root") {
                         sessionStorage.setItem('role', 'admin');
                         window.location.href = "/admin/movie/manage"
-                    } else {
+                    } else if(formData.username == "boss"){
+                        sessionStorage.setItem('role','boss');
+                        window.location.href = "/boss/cancel/manage"
+                    }else{
                         sessionStorage.setItem('role', 'user');
                         window.location.href = "/user/home"
                     }

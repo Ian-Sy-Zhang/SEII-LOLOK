@@ -37,7 +37,7 @@ public class TicketController {
         return ticketService.getTicketByUser(userId);
     }
 
-    @PostMapping("/get/ticket")
+    @GetMapping("/get/ticket")
     public ResponseVO getTicketById(@RequestParam int id){
         return ticketService.getTicketById(id);
     }

@@ -1,6 +1,7 @@
 package com.example.cinema.controller.router;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -77,4 +78,17 @@ public class ViewController {
     public String getUserMember() {
         return "userMember";
     }
+
+    @RequestMapping(value = "/boss/cancel/manage")
+    public String getBossCancelManage() {
+        return "bossCancelManage";
+    }
+
+    @RequestMapping(value = "/boss/role/manage")
+    public String getBossRoleManage() {
+        return "bossRoleManage";
+    }
+
+    @RequestMapping(value = "/user/record")
+    public String getUserRecord(){ return "userRecord";}
 }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>退票管理</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bossCancelManage.css"/>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/request.js"></script>
+    <script src="/js/bossCancelManage.js"></script>
+</head>
+<body>
+<div class="main-container">
+    <div class="nav-left-container">
+        <div class="nav-user-container" style="margin-bottom: 50px;">
+            <img class="avatar-lg" src="/images/defaultAvatar.jpg" />
+            <p class="title">Boss</p>
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a href=""> 会员卡管理</a></li>
+            <li role="presentation" class="active"><a href="#"> 退票管理</a></li>
+            <li role="presentation"><a href=""> 影厅管理</a></li>
+            <li role="presentation"><a href="/boss/role/manage"> 影院角色管理</a></li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <div class="content-item">
+            <span class="title gray-text">退票管理</span>
+            <div class="content-card card">
+                <span class="">开播前  </span><span id="cancel-time"></span><span>  分钟可退票</span>
+                <a style="margin-left: 20px;" class="primary-text" id="cancelTime-modify-btn">修改</a>
+                <input type="number" class="form-control" id="cancelTime-set-input" style="display: none;width: 200px;">
+                <a style="display: none" class="primary-text" id="cancelTime-confirm-btn">确认</a>
+            </div>
+            <div class="content-card card">
+                <span class="">用户可退票最小金额（元）：</span><span id="cancel-least-money"></span>
+                <a style="margin-left: 20px;" class="primary-text" id="cancelLeastMoney-modify-btn">修改</a>
+                <input type="number" class="form-control" id="cancelLeastMoney-set-input" style="display: none;width: 200px;">
+                <a style="display: none" class="primary-text" id="cancelLeastMoney-confirm-btn">确认</a>
+            </div>
+            <div class="content-card card">
+                <span class="">用户可退票最大金额（元）：</span><span id="cancel-most-money"></span>
+                <a style="margin-left: 20px;" class="primary-text" id="cancelMostMoney-modify-btn">修改</a>
+                <input type="number" class="form-control" id="cancelMostMoney-set-input" style="display: none;width: 200px;">
+                <a style="display: none" class="primary-text" id="cancelMostMoney-confirm-btn">确认</a>
+            </div>
+            <div class="content-card card">
+                <span class="">退票返还金额比例：</span><span id="cancel-return-money"></span>
+                <a style="margin-left: 20px;" class="primary-text" id="cancelReturnMoney-modify-btn">修改</a>
+                <input type="number" class="form-control" id="cancelReturnMoney-set-input" style="display: none;width: 200px;">
+                <a style="display: none" class="primary-text" id="cancelReturnMoney-confirm-btn">确认</a>
+            </div>
+            <div class="content-card card">
+                <div><span>选择可退票的电影:</span></div>
+                <div id="movie-list"></div>
+                <div><button id="btnOperate" type="button" value="选择" onclick="choose()">确认</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

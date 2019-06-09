@@ -15,9 +15,9 @@ $(document).ready(function () {
     // TODO:填空
     function renderTicketList(list) {
         $("#ticketTable").empty()
-        list.forEach(function (ticket) {
-          addInfo(ticket)
-        })
+        for(var i=0;i<list.length;i++){
+            addInfo(list[i])
+        }
     }
 
     function addInfo(ticket) {
@@ -46,18 +46,41 @@ $(document).ready(function () {
             "<td>"+startTime+"</td>>"+//startTime.getMonth()+"月"+startTime.getDate()+"日 "+startTime.getHours+":"+startTime.getMinutes()+"</td>"+
             "<td>"+endTime+"</td>>"+//endTime.getMonth()+"月"+endTime.getDate()+"日 "+endTime.getHours+":"+endTime.getMinutes()+"</td>"+
             "<td>"+ticket.state+"</td>"+
-            "<td><button onclick='cancelTicket("+String(ticket.state)+")'>退票</button><td>"+
+            "<td><button onclick='cancelTicket("+ticket.id+")'>退票</button><td>"+
             "</tr>";
         $("#ticketTable").append(ticketStr)
     }
 
 });
 
-function cancelTicket(state) {
-    alert(state)
-    if(state=="已完成"){
-
-    }else{
-        alert("这张票"+state)
-    }
+function cancelTicket(id) {
+    getRequest(
+        '/ticket/get/ticket?id='+id,
+        function (res) {
+            var ticket=res.content;
+            if(ticket.state=="未完成"){
+                alert("这张票未完成")
+            }else if(ticket.state=="已失效"){
+                alert("这张票已失效")
+            }else if(ticket.state=="已退票"){
+                alert("这张票已退票")
+            }else{
+                var ticketList = new Array();
+                ticketList[0]=id;
+                postRequest(
+                    '/ticket/cancel?ticketId='+ticketList,
+                    null,
+                    function (res) {
+                        alert("退票成功")
+                    },
+                    function (error) {
+                        alert(error)
+                    }
+                )
+            }
+        },
+        function (error) {
+            alert(error)
+        }
+    )
 }
