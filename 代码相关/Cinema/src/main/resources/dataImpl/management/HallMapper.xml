@@ -8,17 +8,6 @@
         select * from hall where id = #{hallId}
     </select>
 
-    <insert id="addHall" >
-        insert into hall(name, column, row, size)
-        values (#{name},#{column},#{row},#{size})
-    </insert>
-
-    <update id="updateHall">
-        update hall set (name, column, row, size) = (#{name},#{column},#{row},#{size}) where id=#{id}
-    </update>
-
-
-
     <resultMap id="Hall" type="com.example.cinema.po.Hall">
     </resultMap>
 

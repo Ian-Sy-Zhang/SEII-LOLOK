@@ -41,34 +41,6 @@ public class HallServiceImpl implements HallService, HallServiceForBl {
 
     }
 
-
-    @Override
-    public ResponseVO addHall(Hall hall){
-
-        try {
-            hallMapper.addHall(hall);
-            return ResponseVO.buildSuccess();
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-
-    @Override
-    public ResponseVO updateHall(Hall hall){
-
-        try {
-            hallMapper.updateHall(hall);
-            return ResponseVO.buildSuccess();
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-
-
     private List<HallVO> hallList2HallVOList(List<Hall> hallList){
         List<HallVO> hallVOList = new ArrayList<>();
         for(Hall hall : hallList){

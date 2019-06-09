@@ -6,7 +6,6 @@ import com.example.cinema.blImpl.management.schedule.ScheduleServiceForBl;
 import com.example.cinema.data.promotion.ActivityMapper;
 import com.example.cinema.data.promotion.VIPCardMapper;
 import com.example.cinema.data.promotion.VIPCardTypeMapper;
-import com.example.cinema.data.sales.ExpensesMapper;
 import com.example.cinema.data.sales.TicketMapper;
 import com.example.cinema.data.promotion.CouponMapper;
 import com.example.cinema.po.*;

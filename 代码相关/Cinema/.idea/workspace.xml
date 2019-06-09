@@ -2,54 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d8e31f9-a5e2-4191-b2ea-cc54019b5645" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/623f625b-3cc4-4b83-836a-1a3c08cda9cf.corrupted.20190606-102314.reason.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/APPTIState.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/sales/ExpensesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/sales/ExpensesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/sales/ExpensesMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/Expenses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dataImpl/sales/ExpensesMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/example/cinema/blImpl/user/AccountServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/data/sales/ExpensesMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/po/Expenses.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/po/User$role.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/vo/RefundPolicyVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/dataImpl/sales/ExpensesMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/cinema/blImpl/user/AccountServiceImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/623f625b-3cc4-4b83-836a-1a3c08cda9cf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/623f625b-3cc4-4b83-836a-1a3c08cda9cf.corrupted.20190606-102314.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/hyzStage3.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/hyzStage3.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/management/HallService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/management/HallService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/user/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/bl/user/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/management/hall/HallServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/management/hall/HallServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/sales/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/sales/TicketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/user/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/user/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/user/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/controller/user/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/management/HallMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/management/HallMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/management/ScheduleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/management/ScheduleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/user/AccountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/data/user/AccountMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/Hall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/Hall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cinema/po/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dataImpl/management/HallMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dataImpl/management/HallMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dataImpl/sales/TicketMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dataImpl/sales/TicketMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dataImpl/user/AccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dataImpl/user/AccountMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/example/cinema/test/VIPServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/example/cinema/test/VIPServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/bl/sales/TicketService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/bl/sales/TicketService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/bl/user/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/bl/user/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/blImpl/sales/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/blImpl/sales/TicketServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/blImpl/user/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/blImpl/user/AccountServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/controller/sales/TicketController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/controller/sales/TicketController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/controller/user/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/controller/user/AccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/data/user/AccountMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/data/user/AccountMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cinema/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cinema/po/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataImpl/sales/TicketMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataImpl/sales/TicketMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataImpl/user/AccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataImpl/user/AccountMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/cinema/test/VIPServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/cinema/test/VIPServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/management/hall/HallServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="296">
-              <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
+              <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -91,26 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sql/hyzStage3.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql/APPTIState.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/sales/ExpensesMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="138">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -241,40 +176,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="sales" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -291,7 +192,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560086114728" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560084775290" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -473,7 +374,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35794000" />
+    <option name="totallyTimeSpent" value="35279000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -547,37 +448,6 @@
                 </list>
               </option>
             </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/master" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="HEAD" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="me" />
-                </option>
-              </RecentGroup>
-            </list>
           </value>
         </entry>
       </map>
@@ -835,6 +705,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/sales/ExpensesMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/bl/sales/ExpensesService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -957,28 +837,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/management/hall/HallServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
-          <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/sales/ExpensesMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sql/APPTIState.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
+        <state relative-caret-position="494">
           <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sql/hyzStage3.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="138">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
         </state>
       </provider>
     </entry>
