@@ -9,6 +9,10 @@
         select * from user where username=#{username}
     </select>
 
+    <select id="getAccountById" resultMap="User">
+        select * from user where id=#{id}
+    </select>
+
     <delete id="manageAccount">
         delete from user where id=#{userId}
     </delete>
@@ -18,7 +22,7 @@
     </select>
 
     <update id="manageAccountRole" parameterType="com.example.cinema.po.User">
-        update user set (username,password,role),values (#{username},#{password},#{role}) where id = #{id}
+        update user set username=#{username},password=#{password},role=#{role} where id = #{id}
     </update>
 
     <insert id="addAccountsByBoss" useGeneratedKeys="true" keyProperty="id">

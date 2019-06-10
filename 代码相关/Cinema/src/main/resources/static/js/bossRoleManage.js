@@ -33,7 +33,7 @@ function getAccountlist() {
                     "<th>"+role+"</th>"+
                     "<th>"+user.username+"</th>"+
                     "<th>"+user.password+"</th>"+
-                    "<th><button class='btn btn-primary'>修改</button></th>"+
+                    "<th><button class='btn btn-primary' data-backdrop='static' data-toggle='modal' data-target='#roleModal2' onclick='changeAccount("+user.id+")'>修改</button></th>"+
                     "<th><button class='btn btn-danger' onclick='deleteAccount("+user.id+")'>删除</button></th>"+
                     "</tr>"
             }
@@ -76,6 +76,58 @@ function getUser() {
             role: "manager"
         }
     }
+}
+function changeAccount(id) {
+    getRequest(
+        '/get/account?id='+id,
+        function (res) {
+            var user = res.content;
+            $("#user-id-input2").text(user.id)
+            $("#user-name-input2").val(user.username)
+            $("#user-password-input2").val(user.password)
+            if(user.role=="staff") {
+                $("#user-role-input2").val("员工")
+            }else{
+                $("#user-role-input2").val("经理")
+            }
+        },
+        function (error) {
+            alert(error)
+        }
+    )
+}
+function ensureChange() {
+    var role =$("#user-role-input2").val()
+    var user;
+    if(role=="员工") {
+        user = {
+            id: $("#user-id-input2").val(),
+            username: $("#user-name-input2").val(),
+            password: $("#user-password-input2").val(),
+            role:"staff"
+        }
+    }else{
+        user = {
+            id: $("#user-id-input2").val(),
+            username: $("#user-name-input2").val(),
+            password: $("#user-password-input2").val(),
+            role:"boss"
+        }
+    }
+    postRequest(
+        '/change/account',
+        user,
+        function (res) {
+            if(res.success) {
+                alert("修改成功")
+                getAccountlist();
+                $("#roleModal2").modal('hide')
+            }
+        },
+        function (error) {
+            alert(error)
+        }
+    )
 }
 
     

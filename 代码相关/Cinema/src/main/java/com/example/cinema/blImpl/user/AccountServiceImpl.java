@@ -82,4 +82,10 @@ public class AccountServiceImpl implements AccountService {
         return ResponseVO.buildSuccess();
     }
 
+    @Override
+    public ResponseVO getAccountById(int id) {
+        User user = accountMapper.getAccountById(id);
+        return ResponseVO.buildSuccess(user);
+    }
+
 }

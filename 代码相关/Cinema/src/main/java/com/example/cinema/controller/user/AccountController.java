@@ -50,4 +50,10 @@ public class AccountController {
 
     @PostMapping("/add/account")
     public ResponseVO addAccount(@RequestBody User user){return accountService.addAccountsByBoss(user);}
+
+    @GetMapping("/get/account")
+    public ResponseVO getAccountById(@RequestParam int id){return accountService.getAccountById(id);}
+
+    @PostMapping("/change/account")
+    public ResponseVO changeAccount(@RequestBody User user){return accountService.changeRole(user);}
 }

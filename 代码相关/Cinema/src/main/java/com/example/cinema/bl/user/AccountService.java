@@ -45,4 +45,6 @@ public interface AccountService {
      */
     public ResponseVO addAccountsByBoss(User user);
 
+    public ResponseVO getAccountById(int id);
+
 }

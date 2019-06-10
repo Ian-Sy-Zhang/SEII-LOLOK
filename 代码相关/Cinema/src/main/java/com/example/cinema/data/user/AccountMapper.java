@@ -43,8 +43,10 @@ public interface AccountMapper {
      */
     int manageAccountRole(User user);
 
-
+    //增加角色
     int addAccountsByBoss(User user);
 
-    int changeAccount(@Param("id") int id,@Param("user") User user);
+    //根据id获取角色信息
+    User getAccountById(@Param("id") int id);
+
 }
