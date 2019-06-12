@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优惠券管理</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bossCouponManage.css"/>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/request.js"></script>
+    <script src="/js/bossCouponManage.js"></script>
+</head>
+<body>
+<div class="main-container">
+    <div class="nav-left-container">
+        <div class="nav-user-container" style="margin-bottom: 50px;">
+            <img class="avatar-lg" src="/images/defaultAvatar.jpg" />
+            <p class="title">Boss</p>
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a href="/boss/vip/manage"> 会员卡管理</a></li>
+            <li role="presentation"><a href="/boss/cancel/manage"> 退票管理</a></li>
+            <li role="presentation"><a href="/boss/hall/manage"> 影厅管理</a></li>
+            <li role="presentation"><a href="/boss/role/manage"> 影院角色管理</a></li>
+            <li role="presentation" class="active"><a href="#"> 优惠券管理</a></li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <div class="content-header">
+            <span class="title gray-text">优惠券管理</span>
+            <button style="float: right" type="button" class="btn btn-primary" data-backdrop="static" data-toggle="modal" data-target="#couponSetModal" >新增优惠券</button>
+        </div>
+        <div class="content-card card">
+            <div style="display: flex;justify-content: space-between">
+                <div style="display: flex;justify-content: space-between">
+                    <span style="width: 250px">消费金额要求(元):</span>
+                    <input type="number" class="form-control" id = "amount-request">
+                    <button class="btn btn-primary" data-backdrop="static" onclick="setUserList()">筛选</button>
+                </div>
+            </div>
+        </div>
+        <div class="content-card card">
+            <span>筛选出的用户列表:</span>
+            <table class="table b">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>用户名</th>
+                    <th>密码</th>
+                    <th>选择</th>
+                </tr>
+                </thead>
+                <tbody id="user-list">
+                </tbody>
+            </table>
+        </div>
+        <div class="content-card card">
+            <span>优惠券列表:</span>
+            <table class="table b">
+                <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>满</th>
+                    <th>减</th>
+                    <th>开始时间</th>
+                    <th>结束时间</th>
+                    <th>描述</th>
+                    <th>选择</th>
+                </tr>
+                </thead>
+                <tbody id="coupon-list">
+                </tbody>
+            </table>
+        </div>
+        <button class="btn btn-primary" style="float: right" onclick="sendCoupon()">赠送</button>
+    </div>
+</div>
+<div class="modal fade" id="couponSetModal" tabindex="-1" role="dialog" aria-labelledby="couponSetModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="couponModalLabel">新增优惠券</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="couponSet-name-input"><span class="error-text">*</span>名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="couponSet-name-input" placeholder="请输入优惠券名称">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="couponSet-description-input"><span class="error-text">*</span>描述</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="couponSet-description-input" placeholder="请输入优惠券描述">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="couponSet-targetAmount-input"><span class="error-text">*</span>满</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="couponSet-targetAmount-input" placeholder="请输入需满足金额">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="couponSet-discountAmount-input"><span class="error-text">*</span>减</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="couponSet-discountAmount-input" placeholder="请输入减免金额">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="couponSet-startTime-input"><span class="error-text">*</span>起始时间</label>
+                        <div class="col-sm-10">
+                            <input type="datetime-local" class="form-control" id="couponSet-startTime-input" placeholder="请输入开始时间">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="couponSet-endTime-input"><span class="error-text">*</span>截止时间</label>
+                        <div class="col-sm-10">
+                            <input type="datetime-local" class="form-control" id="couponSet-endTime-input" placeholder="请输入截止时间">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="couponSet-form-btn" onclick="addCoupon()">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

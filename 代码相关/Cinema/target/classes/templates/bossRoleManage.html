@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>影院角色管理</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bossRoleManage.css"/>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/request.js"></script>
+    <script src="/js/bossRoleManage.js"></script>
+</head>
+<body>
+<div class="main-container">
+    <div class="nav-left-container">
+        <div class="nav-user-container" style="margin-bottom: 50px;">
+            <img class="avatar-lg" src="/images/defaultAvatar.jpg" />
+            <p class="title">Boss</p>
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a href="/boss/vip/manage"> 会员卡管理</a></li>
+            <li role="presentation"><a href="/boss/cancel/manage"> 退票管理</a></li>
+            <li role="presentation"><a href="/boss/hall/manage"> 影厅管理</a></li>
+            <li role="presentation" class="active"><a href="#"> 影院角色管理</a></li>
+            <li role="presentation"><a href="/boss/coupon/manage"> 优惠券管理</a></li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <div class="content-header">
+            <span class="title gray-text">影院角色管理</span>
+            <button type="button" style="float:right" class="btn btn-primary" data-backdrop="static" data-toggle="modal" data-target="#roleModal"><i class="icon-plus-sign"></i> 增加角色</button>
+        </div>
+        <div class="content-card card">
+             <table class="table b">
+                 <thead>
+                 <tr>
+                     <th>身份</th>
+                     <th>用户名</th>
+                     <th>密码</th>
+                     <th>修改</th>
+                     <th>删除</th>
+                 </tr>
+                 </thead>
+                 <tbody id="account-list"></tbody>
+             </table>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="roleModal" tabindex="-1" role="dialog" aria-labelledby="movieModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="userModalLabel">新增角色</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="user-role-input"><span class="error-text">*</span>身份</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="user-role-input" placeholder="请输入身份">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="user-name-input"><span class="error-text">*</span>用户名</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="user-name-input" placeholder="请输入用户名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="user-password-input">密码</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="user-password-input" placeholder="请输入密码">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="user-form-btn" onclick="addAccount()">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="roleModal2" tabindex="-1" role="dialog" aria-labelledby="movieModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="userModalLabel2">修改角色</h4>
+                <span>id : </span><span id="user-id-input2"></span>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="user-role-input2"><span class="error-text">*</span>身份</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="user-role-input2" placeholder="请输入身份">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="user-name-input2"><span class="error-text">*</span>用户名</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="user-name-input2" placeholder="请输入用户名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="user-password-input2">密码</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="user-password-input2" placeholder="请输入密码">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="user-form-btn2" onclick="ensureChange()">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

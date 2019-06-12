@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.cinema.data.sales.RefundMapper">
+    <update id="updateRefundPolicy" parameterType="com.example.cinema.po.RefundPolicy">
+        update refund_policy
+        set
+        refund_rate = #{refundRate},
+        refund_type = #{refundType},
+        advanced_minute = #{advancedMinute}
+        where id = #{id}
+    </update>
+    
+    <select id="getRefundPolicy" resultMap="RefundPolicy">
+        select * from refund_policy where id = #{id}
+    </select>
+
+    <resultMap id="RefundPolicy" type="com.example.cinema.po.RefundPolicy">
+        <result column="refund_type" property="refundType"></result>
+        <result column="refund_rate" property="refundRate"></result>
+        <result column="advanced_minute" property="advancedMinute"></result>
+    </resultMap>
+
+    <insert id="addRefundSchedule">
+        insert into refund_schedule(schedule_id) values (#{scheduleId})
+    </insert>
+
+    <delete id="deleteRefundSchedule">
+        delete from refund_schedule where schedule_id = #{schduleId}
+    </delete>
+
+    <select id="getAllRefundScheduleId" resultType="Integer">
+        select * from refund_schedule
+    </select>
+
+    <delete id="clear">
+        delete from refund_schedule
+    </delete>
+</mapper>

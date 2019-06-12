@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.cinema.data.sales.ChargeMapper">
+
+    <insert id="insertCharge" parameterType="com.example.cinema.vo.ChargeVO">
+        insert into Charge(userId,Amount,Description)
+        values (#{userId},#{Amount},#{Description})
+    </insert>
+
+    <select id="showChargeByUserId" parameterType="java.lang.Integer" resultMap="Charge">
+        select * from Charge where userId=#{userId}
+    </select>
+
+    <select id="showChargeById" parameterType="java.lang.Integer" resultMap="Charge">
+        select * from Charge where chargeId=#{chargeId}
+    </select>
+
+
+
+    <resultMap id="Charge" type="com.example.cinema.po.Charge">
+        <result property="chargeId" column="chargeId"></result>
+    </resultMap>
+
+</mapper>
