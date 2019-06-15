@@ -101,14 +101,14 @@ function ensureChange() {
     var user;
     if(role=="员工") {
         user = {
-            id: $("#user-id-input2").val(),
+            id: $("#user-id-input2").text(),
             username: $("#user-name-input2").val(),
             password: $("#user-password-input2").val(),
             role:"staff"
         }
     }else{
         user = {
-            id: $("#user-id-input2").val(),
+            id: $("#user-id-input2").text(),
             username: $("#user-name-input2").val(),
             password: $("#user-password-input2").val(),
             role:"boss"
