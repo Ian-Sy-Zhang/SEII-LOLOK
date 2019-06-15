@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d8e31f9-a5e2-4191-b2ea-cc54019b5645" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4d8e31f9-a5e2-4191-b2ea-cc54019b5645" name="Default Changelist" comment="Merge branch 'master1'&#10;&#10;# Conflicts:&#10;#&#9;代码相关/Cinema/.idea/dataSources.local.xml&#10;#&#9;代码相关/Cinema/.idea/dataSources.xml&#10;#&#9;代码相关/Cinema/.idea/dataSources/623f625b-3cc4-4b83-836a-1a3c08cda9cf.corrupted.20190609-081108.reason.txt&#10;#&#9;代码相关/Cinema/.idea/dataSources/623f625b-3cc4-4b83-836a-1a3c08cda9cf.corrupted.20190609-081108.xml&#10;#&#9;代码相关/Cinema/.idea/dataSources/623f625b-3cc4-4b83-836a-1a3c08cda9cf.xml&#10;#&#9;代码相关/Cinema/.idea/sqldialects.xml&#10;#&#9;代码相关/Cinema/.idea/workspace.xml&#10;#&#9;代码相关/Cinema/sql/APPTIState.sql&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/bl/management/HallService.java&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/bl/sales/ExpensesService.java&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/bl/user/AccountService.java&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/blImpl/management/hall/HallServiceImpl.java&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/blImpl/sales/ExpensesServiceImpl.java&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/blImpl/sales/TicketServiceImpl.java&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/blImpl/user/AccountServiceImpl.java&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/controller/user/AccountController.java&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/data/management/HallMapper.java&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/data/sales/ExpensesMapper.java&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/data/user/AccountMapper.java&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/po/Expenses.java&#10;#&#9;代码相关/Cinema/src/main/java/com/example/cinema/po/Hall.java&#10;#&#9;代码相关/Cinema/src/main/resources/dataImpl/management/HallMapper.xml&#10;#&#9;代码相关/Cinema/src/main/resources/dataImpl/sales/ExpensesMapper.xml&#10;#&#9;代码相关/Cinema/src/main/resources/dataImpl/user/AccountMapper.xml&#10;#&#9;代码相关/Cinema/src/test/com/example/cinema/test/VIPServiceTest.java&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/bl/management/HallService.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/bl/promotion/CouponService.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/bl/sales/TicketService.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/bl/user/AccountService.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/blImpl/management/hall/HallServiceImpl.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/blImpl/management/movie/MovieServiceImpl.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/blImpl/management/schedule/ScheduleServiceImpl.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/blImpl/promotion/ActivityServiceImpl.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/blImpl/promotion/CouponServiceImpl.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/blImpl/sales/TicketServiceImpl.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/blImpl/statistics/MovieLikeServiceImpl.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/blImpl/statistics/StatisticsServiceImpl.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/blImpl/user/AccountServiceImpl.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/controller/management/HallController.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/controller/promotion/CouponController.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/controller/router/ViewController.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/controller/sales/TicketController.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/controller/user/AccountController.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/data/management/HallMapper.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/data/promotion/CouponMapper.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/data/promotion/VIPCardMapper.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/data/sales/ExpensesMapper.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/data/user/AccountMapper.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/interceptor/SessionInterceptor.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/po/Activity.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/po/Expenses.class&#10;#&#9;代码相关/Cinema/target/classes/com/example/cinema/po/Hall.class&#10;#&#9;代码相关/Cinema/target/classes/dataImpl/sales/ExpensesMapper.xml&#10;#&#9;代码相关/Cinema/target/classes/dataImpl/user/AccountMapper.xml&#10;#&#9;代码相关/Cinema/target/test-classes/com/example/cinema/test/VIPServiceTest.class" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,30 +20,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cinema: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cinema@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cinema: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="vip_card_type: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ExecutionTargetDialog">
@@ -56,19 +31,65 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/management/hall/HallServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+            <state relative-caret-position="60">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/adminCinemaManage.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/adminCinemaStatistic.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://ac77ae04-d964-40bc-ac4f-c5848651de93/schema/cinema/table/user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sql/hyzStage3.sql">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/user/AccountMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="35" selection-end-line="37" selection-end-column="2" />
+            <state relative-caret-position="165">
+              <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="59" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://ac77ae04-d964-40bc-ac4f-c5848651de93/schema/cinema/table/Expenses">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/sales/TicketServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2985">
+              <caret line="216" column="1" selection-start-line="216" selection-start-column="1" selection-end-line="216" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -167,42 +188,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,7 +384,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35665000" />
+    <option name="totallyTimeSpent" value="36036000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -408,10 +396,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21101573" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -430,7 +417,7 @@
       <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32961586" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.7149938" />
@@ -475,19 +462,26 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/bl/statistics/StatisticsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/vo/ResponseVO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -636,27 +630,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://312046dd-7c9b-4315-bb2d-f0f6767fdd51/schema/cinema/table/schedule">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://312046dd-7c9b-4315-bb2d-f0f6767fdd51/schema/cinema/table/Expenses">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://312046dd-7c9b-4315-bb2d-f0f6767fdd51/schema/cinema/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://312046dd-7c9b-4315-bb2d-f0f6767fdd51/schema/cinema/table/schedule" />
+    <entry file="das://312046dd-7c9b-4315-bb2d-f0f6767fdd51/schema/cinema/table/Expenses" />
+    <entry file="das://312046dd-7c9b-4315-bb2d-f0f6767fdd51/schema/cinema/table/user" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/user/AccountServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
@@ -674,29 +650,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/user/AccountMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/example/cinema/blImpl/user/AccountServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-283">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/example/cinema/blImpl/user/AccountServiceImplTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/management/schedule/ScheduleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1650">
@@ -706,11 +660,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/blImpl/sales/TicketServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="84" column="13" lean-forward="true" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
-          <folding>
-            <element signature="e#5316#5326#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2985">
+          <caret line="216" column="1" selection-start-line="216" selection-start-column="1" selection-end-line="216" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -823,13 +774,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://312046dd-7c9b-4315-bb2d-f0f6767fdd51/schema/cinema/table/hall">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://312046dd-7c9b-4315-bb2d-f0f6767fdd51/schema/cinema/table/hall" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cinema/data/management/HallMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -875,6 +820,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="35" selection-end-line="37" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ac77ae04-d964-40bc-ac4f-c5848651de93/schema/cinema/table/Expenses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dataImpl/user/AccountMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
         </state>
       </provider>
     </entry>
